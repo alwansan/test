@@ -276,16 +276,57 @@ def analyze_playlist(url):
             LOG(f"⚠️ أول فيديو فشل: {e}", "WARN")
     return {"pl_title":pl_title,"entries":entries,"formats":formats}
 
+def has_ffmpeg():
+    """تحقق إذا كان ffmpeg متاحاً في البيئة الحالية"""
+    try:
+        r = subprocess.run(["ffmpeg", "-version"], capture_output=True, timeout=5)
+        return r.returncode == 0
+    except Exception:
+        return False
+
+FFMPEG_AVAILABLE = has_ffmpeg()
+LOG(f"{'✅' if FFMPEG_AVAILABLE else '⚠️'} ffmpeg: {'متاح' if FFMPEG_AVAILABLE else 'غير متاح — سيُستخدم صيغة واحدة فقط'}")
+
 def pick_format(format_id, all_formats, mode):
-    if mode == "audio": return "bestaudio/best","mp3"
-    if format_id == "best": return "bestvideo+bestaudio/best",None
-    sel = next((f for f in all_formats if f["format_id"]==format_id), None)
-    if not sel: return f"{format_id}+bestaudio/best",None
-    v_ext = sel.get("ext","mp4"); has_audio = sel.get("acodec","none") != "none"
+    """
+    إذا لم يكن ffmpeg متاحاً، نختار صيغة تحتوي على صوت+فيديو معاً (no merge needed).
+    """
+    if mode == "audio":
+        if FFMPEG_AVAILABLE:
+            return "bestaudio/best", "mp3"
+        else:
+            # بدون ffmpeg: حمّل أفضل صيغة فيها صوت مباشرة
+            return "bestaudio[ext=m4a]/bestaudio[ext=webm]/bestaudio/best", None
+
+    if not FFMPEG_AVAILABLE:
+        # بدون ffmpeg: نحتاج صيغة فيها صوت وفيديو معاً (progressive)
+        if format_id == "best":
+            return "best[ext=mp4]/best", None
+        sel = next((f for f in all_formats if f["format_id"] == format_id), None)
+        if sel and sel.get("acodec", "none") != "none":
+            # الصيغة المطلوبة لها صوت — يمكن تحميلها مباشرة
+            return format_id, None
+        # الصيغة بدون صوت → ابحث عن أقرب صيغة progressive بنفس الدقة
+        target_h = (sel.get("height") or 0) if sel else 0
+        progressive = [f for f in all_formats
+                       if f.get("acodec", "none") != "none"
+                       and f.get("vcodec", "none") != "none"
+                       and f.get("ext") == "mp4"]
+        if progressive:
+            # اختر الأقرب للدقة المطلوبة
+            progressive.sort(key=lambda f: abs((f.get("height") or 0) - target_h))
+            return progressive[0]["format_id"], None
+        return "best[ext=mp4]/best", None
+
+    # ffmpeg متاح — المسار الطبيعي
+    if format_id == "best": return "bestvideo+bestaudio/best", None
+    sel = next((f for f in all_formats if f["format_id"] == format_id), None)
+    if not sel: return f"{format_id}+bestaudio/best", None
+    v_ext = sel.get("ext", "mp4"); has_audio = sel.get("acodec", "none") != "none"
     if has_audio: return format_id, None
     if v_ext == "webm":
-        return f"{format_id}+bestaudio[ext=webm]/bestaudio[acodec=opus]/bestaudio","webm"
-    return f"{format_id}+bestaudio[ext=m4a]/bestaudio[acodec=aac]/bestaudio","mp4"
+        return f"{format_id}+bestaudio[ext=webm]/bestaudio[acodec=opus]/bestaudio", "webm"
+    return f"{format_id}+bestaudio[ext=m4a]/bestaudio[acodec=aac]/bestaudio", "mp4"
 
 def quality_label(format_id, all_formats, mode):
     if mode == "audio": return "MP3"
@@ -315,13 +356,19 @@ def run_download(url, format_id, mode):
             dl_opts.update({"format":req_fmt,
                 "outtmpl":os.path.join(SAVE_PATH, f"{out_name}.%(ext)s"),
                 "progress_hooks":[hook],"noprogress":True,"overwrites":True,"continuedl":True})
-            if merge_ext: dl_opts["merge_output_format"] = merge_ext
-            if mode == "audio":
+            if merge_ext and FFMPEG_AVAILABLE:
+                dl_opts["merge_output_format"] = merge_ext
+            if mode == "audio" and FFMPEG_AVAILABLE:
                 dl_opts["postprocessors"] = [{"key":"FFmpegExtractAudio",
                                                "preferredcodec":"mp3","preferredquality":"192"}]
             with yt_dlp.YoutubeDL(dl_opts) as ydl:
                 ydl.download([url])
-            ext   = "mp3" if mode == "audio" else (merge_ext or "mp4")
+            if mode == "audio":
+                ext = "mp3" if FFMPEG_AVAILABLE else "m4a"
+            elif merge_ext and FFMPEG_AVAILABLE:
+                ext = merge_ext
+            else:
+                ext = "mp4"
             fname = f"{out_name}.{ext}"
             if not os.path.exists(os.path.join(SAVE_PATH, fname)):
                 newer = sorted([f for f in Path(SAVE_PATH).glob(f"{out_name}*") if f.is_file()],
@@ -379,13 +426,19 @@ def run_playlist_download(entries, format_id, mode):
                     "outtmpl":os.path.join(SAVE_PATH, f"{out_name}.%(ext)s"),
                     "progress_hooks":[pl_hook],"noprogress":True,
                     "overwrites":False,"continuedl":True,"ignoreerrors":False})
-                if merge_ext: dl_opts["merge_output_format"] = merge_ext
-                if mode == "audio":
+                if merge_ext and FFMPEG_AVAILABLE:
+                    dl_opts["merge_output_format"] = merge_ext
+                if mode == "audio" and FFMPEG_AVAILABLE:
                     dl_opts["postprocessors"] = [{"key":"FFmpegExtractAudio",
                                                    "preferredcodec":"mp3","preferredquality":"192"}]
                 with yt_dlp.YoutubeDL(dl_opts) as ydl:
                     ydl.download([url])
-                ext   = "mp3" if mode == "audio" else (merge_ext or "mp4")
+                if mode == "audio":
+                    ext = "mp3" if FFMPEG_AVAILABLE else "m4a"
+                elif merge_ext and FFMPEG_AVAILABLE:
+                    ext = merge_ext
+                else:
+                    ext = "mp4"
                 fname = f"{out_name}.{ext}"
                 if not os.path.exists(os.path.join(SAVE_PATH, fname)):
                     newer = sorted([f for f in Path(SAVE_PATH).glob(f"{out_name}*") if f.is_file()],
@@ -462,6 +515,14 @@ body{background:var(--bg);color:var(--txt);font-family:var(--font);min-height:10
 .url-input{flex:1;background:var(--surface2);border:1px solid var(--border);border-radius:12px;
   padding:12px 14px;font-size:14px;color:var(--txt);outline:none;direction:ltr;text-align:left;
   font-family:var(--font);transition:border-color .2s,box-shadow .2s}
+.input-wrapper{position:relative;flex:1;display:flex;}
+.url-input{flex:1;width:100%;background:var(--surface2);border:1px solid var(--border);border-radius:12px;
+  padding:12px 35px 12px 14px;font-size:14px;color:var(--txt);outline:none;direction:ltr;text-align:left;
+  font-family:var(--font);transition:border-color .2s,box-shadow .2s}
+.url-input::placeholder{color:var(--muted);direction:rtl;text-align:right;font-size:13px}
+.url-input:focus{border-color:var(--border-active);box-shadow:0 0 0 3px rgba(99,179,237,.08)}
+.clear-btn{position:absolute;right:10px;top:50%;transform:translateY(-50%);color:var(--muted);font-size:14px;cursor:pointer;display:none;padding:5px;transition:color .2s;z-index:5;}
+.clear-btn:hover{color:var(--red);}
 .url-input::placeholder{color:var(--muted);direction:rtl;text-align:right;font-size:13px}
 .url-input:focus{border-color:var(--border-active);box-shadow:0 0 0 3px rgba(99,179,237,.08)}
 .paste-btn{background:rgba(99,179,237,.1);border:1px solid rgba(99,179,237,.2);border-radius:12px;
@@ -602,7 +663,10 @@ body{background:var(--bg);color:var(--txt);font-family:var(--font);min-height:10
       <button class="tab aud" id="mA" onclick="setMode('audio')">🎵 MP3</button>
     </div>
     <div class="url-row">
-      <input id="uI" class="url-input" type="text" placeholder="رابط فيديو أو قائمة تشغيل...">
+      <div class="input-wrapper">
+        <input id="uI" class="url-input" type="text" placeholder="رابط فيديو أو قائمة تشغيل...">
+        <span id="clearBtn" class="clear-btn" onclick="clearInput()">✖</span>
+      </div>
       <button class="paste-btn" onclick="doPaste()">📋 لصق</button>
     </div>
   </div>
@@ -684,10 +748,33 @@ function setMode(m){mode=m;
   document.getElementById('mV').className='tab vid'+(m==='video'?' on':'');
   document.getElementById('mA').className='tab aud'+(m==='audio'?' on':'');
   if(_F.length)buildQ();if(_plFmts.length)buildPlQ();}
-async function doPaste(){try{const t=await navigator.clipboard.readText();document.getElementById('uI').value=t;maybeAn(t);}catch{document.getElementById('uI').focus();}}
+async function doPaste(){try{const t=await navigator.clipboard.readText();document.getElementById('uI').value=t;toggleClearBtn();maybeAn(t);}catch{document.getElementById('uI').focus();}}
 const uI=document.getElementById('uI');
-uI.addEventListener('input',function(){const v=this.value.trim();if(v.startsWith('http')&&!analyzing)maybeAn(v);});
-uI.addEventListener('paste',function(){setTimeout(()=>{const v=this.value.trim();if(v.startsWith('http')&&!analyzing)maybeAn(v);},80);});
+
+// دالة إظهار وإخفاء زر الحذف
+function toggleClearBtn() {
+  document.getElementById('clearBtn').style.display = uI.value.length > 0 ? 'block' : 'none';
+}
+
+// دالة تصفير الحقل عند الضغط على ✖
+function clearInput() {
+  resetAll(); // هذه الدالة موجودة مسبقاً في كودك وتقوم بتنظيف كل شيء وتفريغ الحقل
+  toggleClearBtn();
+}
+
+uI.addEventListener('input',function(){
+  toggleClearBtn();
+  const v=this.value.trim();
+  if(v.startsWith('http')&&!analyzing)maybeAn(v);
+});
+
+uI.addEventListener('paste',function(){
+  setTimeout(()=>{
+    toggleClearBtn();
+    const v=this.value.trim();
+    if(v.startsWith('http')&&!analyzing)maybeAn(v);
+  },80);
+});
 function maybeAn(url){if(url===curU)return;curU=url;doAn(url);}
 function doAn(url){analyzing=true;hideAll();on('sp');
   fetch('/analyze',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({url})})
@@ -802,7 +889,8 @@ function loadH(){fetch('/history').then(r=>r.json()).then(h=>{if(!h||!h.length)r
 fetch('/info').then(r=>r.json()).then(d=>{document.getElementById('sp2').textContent=d.save_path;});
 window.onload=()=>{hideAll();loadH();};
 function resetAll(){clearInterval(pT);clearInterval(plT);_F=[];_plEntries=[];_plSel=new Set();_plFmts=[];
-  hideAll();uI.value='';uI.focus();curU='';analyzing=false;}
+  hideAll();uI.value='';uI.focus();curU='';analyzing=false;
+  const cb=document.getElementById('clearBtn');if(cb)cb.style.display='none';}
 function fmtDur(s){s=Math.round(s);const h=Math.floor(s/3600),m=Math.floor((s%3600)/60),sec=s%60;
   if(h>0)return`${h}:${String(m).padStart(2,'0')}:${String(sec).padStart(2,'0')}`;return`${m}:${String(sec).padStart(2,'0')}`;}
 function fmtSz(n){if(!n||n<=0)return'';if(n>=1073741824)return(n/1073741824).toFixed(1)+'GB';

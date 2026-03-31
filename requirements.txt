@@ -1,3 +1,4 @@
-flet
 flask
 yt-dlp
+requests
+urllib3
