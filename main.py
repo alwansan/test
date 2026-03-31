@@ -1,48 +1,158 @@
 import flet as ft
 import threading
+import subprocess
 import time
-# نقوم باستدعاء ملفك الأصلي كـ مكتبة
-import B_Ultra_v14
+import os
+import traceback
 
-log_file_path = "/storage/emulated/0/Download/B-Ultra/log.txt"
+# ══════════════════════════════════════════════
+#  مسار الحفظ واللوق
+# ══════════════════════════════════════════════
+def get_save_path():
+    for p in [
+        "/storage/emulated/0/Download/B-Ultra",
+        os.path.expanduser("~/storage/downloads/B-Ultra"),
+        os.path.join(os.path.expanduser("~"), "Downloads", "B-Ultra"),
+    ]:
+        try:
+            os.makedirs(p, exist_ok=True)
+            t = os.path.join(p, "._t")
+            open(t, "w").close(); os.remove(t)
+            return p
+        except: continue
+    fb = os.path.join(os.path.dirname(os.path.abspath(__file__)), "Downloads")
+    os.makedirs(fb, exist_ok=True)
+    return fb
 
+SAVE_PATH = get_save_path()
+LOG_FILE  = os.path.join(SAVE_PATH, "log.txt")
+
+flask_started = threading.Event()
+
+# ══════════════════════════════════════════════
+#  تشغيل Flask
+# ══════════════════════════════════════════════
 def run_flask():
-    # نقوم بتشغيل سيرفر فلاسك الخاص بك في الخلفية
-    # استخدمنا 127.0.0.1 ليكون محلياً داخل التطبيق فقط
-    B_Ultra_v14.app.run(host='127.0.0.1', port=8000, debug=False, use_reloader=False)
+    try:
+        import B_Ultra_v14
+        flask_started.set()
+        B_Ultra_v14.app.run(
+            host="0.0.0.0",
+            port=8000,
+            debug=False,
+            use_reloader=False,
+        )
+    except Exception as e:
+        try:
+            with open(LOG_FILE, "a", encoding="utf-8") as f:
+                f.write(f"\n[FLASK-FATAL] {e}\n{traceback.format_exc()}")
+        except: pass
+        flask_started.set()
 
+# ══════════════════════════════════════════════
+#  فتح Chrome أو أي متصفح
+# ══════════════════════════════════════════════
+def open_chrome(url="http://localhost:8000"):
+    cmds = [
+        ["am", "start", "-n",
+         "com.android.chrome/com.google.android.apps.chrome.Main",
+         "-a", "android.intent.action.VIEW", "-d", url],
+        ["am", "start", "-a", "android.intent.action.VIEW", "-d", url],
+        ["termux-open-url", url],
+    ]
+    for cmd in cmds:
+        try:
+            r = subprocess.run(cmd, stdout=subprocess.DEVNULL,
+                               stderr=subprocess.DEVNULL, timeout=6)
+            if r.returncode == 0:
+                return True
+        except: continue
+    return False
+
+def read_log():
+    try:
+        if os.path.exists(LOG_FILE):
+            with open(LOG_FILE, "r", encoding="utf-8", errors="replace") as f:
+                return f.read()
+    except: pass
+    return "(لا يوجد log بعد)"
+
+# ══════════════════════════════════════════════
+#  Flet UI
+# ══════════════════════════════════════════════
 def main(page: ft.Page):
-    # إعدادات نافذة التطبيق
-    page.title = "B-Ultra"
-    page.padding = 0
+    page.title      = "B-Ultra"
+    page.padding    = 0
     page.theme_mode = ft.ThemeMode.DARK
+    page.bgcolor    = "#080b12"
 
-    # 1. تشغيل السكربت الخاص بك (Flask) في مسار (Thread) منفصل
-    # لكي لا يتجمد التطبيق
-    flask_thread = threading.Thread(target=run_flask, daemon=True)
-    flask_thread.start()
-
-    # 2. الانتظار ثانية واحدة للتأكد من أن السيرفر اشتغل تماماً
-    time.sleep(1)
-
-    # 3. إنشاء متصفح داخلي (WebView) لعرض واجهة الـ HTML الخاصة بك
-    webview = ft.WebView(
-        url="http://127.0.0.1:8000",
-        expand=True, # لجعله يملأ شاشة الهاتف بالكامل
+    loading_text = ft.Text("⏳ جارٍ تشغيل السيرفر...", size=16,
+                            color="#63b3ed", text_align=ft.TextAlign.CENTER)
+    loading_sub  = ft.Text("سيُفتح Chrome تلقائياً", size=12,
+                            color="#48556a", text_align=ft.TextAlign.CENTER)
+    progress     = ft.ProgressRing(color="#63b3ed", width=40, height=40)
+    open_btn     = ft.ElevatedButton(
+        "🌐 افتح في المتصفح",
+        on_click=lambda _: open_chrome(),
+        bgcolor="#0d1018", color="#63b3ed", visible=False,
     )
-    
-    with open(log_file_path, "r", encoding="utf-8") as f:
-        log_content = f.read()
+    log_btn = ft.TextButton("📋 عرض log.txt",
+                             on_click=lambda _: show_log(page),
+                             style=ft.ButtonStyle(color={"": "#48556a"}))
 
-    log = ft.SelectableText(
-    value=log_content,
-    expand=True,
-    style=ft.TextStyle(font_family="monospace", font_size=14),
-)
-    
-    # إضافة المتصفح إلى صفحة التطبيق
-    page.add(webview, log)
+    page.add(ft.Column([
+        ft.Container(height=80),
+        ft.Text("🦅 B-Ultra", size=30, weight=ft.FontWeight.W_900,
+                color="#63b3ed", text_align=ft.TextAlign.CENTER),
+        ft.Text("v14 — Playlist Edition", size=13, color="#48556a",
+                text_align=ft.TextAlign.CENTER),
+        ft.Container(height=32),
+        progress, ft.Container(height=16),
+        loading_text, loading_sub,
+        ft.Container(height=20),
+        open_btn, log_btn,
+    ], alignment=ft.MainAxisAlignment.START,
+       horizontal_alignment=ft.CrossAxisAlignment.CENTER, expand=True))
     page.update()
 
-# تشغيل تطبيق Flet
+    threading.Thread(target=run_flask, daemon=True).start()
+    flask_started.wait(timeout=15)
+    time.sleep(1)
+
+    loading_text.value = "🌐 فتح Chrome..."
+    loading_sub.value  = "http://localhost:8000"
+    page.update()
+
+    opened = open_chrome()
+    time.sleep(1)
+
+    progress.visible   = False
+    open_btn.visible   = True
+    loading_text.value = "✅ Chrome مفتوح" if opened else "⚠️ اضغط الزر لفتح المتصفح"
+    loading_sub.value  = "http://localhost:8000"
+    page.update()
+
+
+def show_log(page: ft.Page):
+    content = read_log()
+    if len(content) > 4000:
+        content = "...[مقتطع]\n" + content[-4000:]
+    dlg = ft.AlertDialog(
+        title=ft.Text("📋 log.txt", color="#63b3ed"),
+        content=ft.Column([
+            ft.Text(content, size=10, font_family="monospace",
+                    color="#dde6f0", selectable=True)
+        ], scroll=ft.ScrollMode.AUTO, height=420),
+        actions=[ft.TextButton("إغلاق", on_click=lambda _: close_dlg(page, dlg))],
+    )
+    page.dialog = dlg
+    dlg.open    = True
+    page.update()
+
+
+def close_dlg(page, dlg):
+    dlg.open = False
+    page.update()
+
+
 ft.app(target=main)
