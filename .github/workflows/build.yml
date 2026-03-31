@@ -19,7 +19,7 @@ jobs:
           python-version: '3.11'
 
       - name: Install Flet
-        run: yes | flet build apk
+        run: pip install flet
 
       - name: Install dependencies
         run: |
