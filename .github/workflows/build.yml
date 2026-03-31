@@ -13,6 +13,13 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
+      # تجهيز بيئة Java (ضرورية جداً لأي تطبيق أندرويد لتجنب الأخطاء)
+      - name: Setup Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'zulu'
+          java-version: '17'
+
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
@@ -21,8 +28,9 @@ jobs:
       - name: Install Flet
         run: pip install flet
 
+      # الحل السحري: استخدام (yes |) للإجابة تلقائياً على أي سؤال بـ (نعم)
       - name: Build APK
-        run: flet build apk
+        run: yes | flet build apk
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
