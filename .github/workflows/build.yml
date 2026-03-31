@@ -13,13 +13,6 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      # تجهيز بيئة Java (ضرورية جداً لأي تطبيق أندرويد لتجنب الأخطاء)
-      - name: Setup Java
-        uses: actions/setup-java@v3
-        with:
-          distribution: 'zulu'
-          java-version: '17'
-
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
@@ -28,12 +21,17 @@ jobs:
       - name: Install Flet
         run: pip install flet
 
-      # الحل السحري: استخدام (yes |) للإجابة تلقائياً على أي سؤال بـ (نعم)
+      - name: Install dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq openjdk-17-jdk wget
+
       - name: Build APK
-        run: yes | flet build apk
+        run: flet build apk --verbose
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: B-Ultra-App-APK
+          name: B-Ultra-APK
           path: build/apk/*.apk
+          if-no-files-found: error
