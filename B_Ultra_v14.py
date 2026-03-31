@@ -47,6 +47,32 @@ def get_save_path():
 
 SAVE_PATH    = get_save_path()
 HISTORY_FILE = os.path.join(SAVE_PATH,".history.json")
+
+# ─── Logging System ───
+LOG_FILE = os.path.join(SAVE_PATH, "log.txt")
+
+class Tee:
+    def __init__(self, *files):
+        self.files = files
+
+    def write(self, data):
+        for f in self.files:
+            f.write(data)
+            f.flush()  # تحديث مباشر
+
+    def flush(self):
+        for f in self.files:
+            f.flush()
+
+# فتح ملف اللوق
+log_f = open(LOG_FILE, "a", encoding="utf-8")
+
+# ربط print + errors بالملف
+sys.stdout = Tee(sys.stdout, log_f)
+sys.stderr = Tee(sys.stderr, log_f)
+
+print(f"📝 Logging started → {LOG_FILE}")
+
 UA = "Mozilla/5.0 (Linux; Android 13; Pixel 7) AppleWebKit/537.36 Chrome/120 Mobile Safari/537.36"
 
 def fmt_size(n):
@@ -90,9 +116,14 @@ def save_history(entry):
     except: pass
 
 class Q:
-    def debug(self,m): pass
-    def warning(self,m): pass
-    def error(self,m): print(f"❌ {m}")
+    def debug(self, m):
+        print(f"[DEBUG] {m}")
+
+    def warning(self, m):
+        print(f"[WARN] {m}")
+
+    def error(self, m):
+        print(f"[ERROR] {m}")
 
 def hook(d):
     if stop_flag.is_set(): raise Exception("Cancelled")
@@ -174,6 +205,8 @@ def extract_video_formats(formats):
 # ══════════════════════════════════════════════
 def analyze_url(url):
     print(f"\n🔍 تحليل: {url}")
+    with open(LOG_FILE, "a", encoding="utf-8") as f:
+        f.write(f"\n=== ANALYZE ===\nURL: {url}\nTime: {datetime.now()}\n")
     title=""; duration=0; thumb=""; all_formats=[]
     try:
         with yt_dlp.YoutubeDL(opts_base()) as ydl:
@@ -284,6 +317,17 @@ def run_download(url, format_id, mode):
             qlabel=quality_label(format_id,all_fmts,mode)
             state["step"]="⬇️ جارٍ التحميل..."
             out_name = f"{safe_title} [{qlabel}]"
+            
+            # 🔥 LOG DOWNLOAD (حطه هنا بالضبط)
+            with open(LOG_FILE, "a", encoding="utf-8") as f:
+                f.write(f"\n=== DOWNLOAD ===\n")
+                f.write(f"Title: {data['title']}\n")
+                f.write(f"URL: {url}\n")
+                f.write(f"Format: {req_fmt}\n")
+                f.write(f"Mode: {mode}\n")
+                f.write(f"Time: {datetime.now()}\n")
+
+
             dl_opts=opts_base()
             dl_opts.update({"format":req_fmt,
                             "outtmpl":os.path.join(SAVE_PATH,f"{out_name}.%(ext)s"),

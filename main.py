@@ -4,6 +4,8 @@ import time
 # نقوم باستدعاء ملفك الأصلي كـ مكتبة
 import B_Ultra_v14
 
+log_file_path = "/storage/emulated/0/Download/B-Ultra/log.txt"
+
 def run_flask():
     # نقوم بتشغيل سيرفر فلاسك الخاص بك في الخلفية
     # استخدمنا 127.0.0.1 ليكون محلياً داخل التطبيق فقط
@@ -29,8 +31,18 @@ def main(page: ft.Page):
         expand=True, # لجعله يملأ شاشة الهاتف بالكامل
     )
     
+    with open(log_file_path, "r", encoding="utf-8") as f:
+        log_content = f.read()
+
+    log = ft.SelectableText(
+    value=log_content,
+    expand=True,
+    style=ft.TextStyle(font_family="monospace", font_size=14),
+)
+    
     # إضافة المتصفح إلى صفحة التطبيق
-    page.add(webview)
+    page.add(webview, log)
+    page.update()
 
 # تشغيل تطبيق Flet
 ft.app(target=main)
