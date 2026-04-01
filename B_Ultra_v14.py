@@ -276,57 +276,16 @@ def analyze_playlist(url):
             LOG(f"⚠️ أول فيديو فشل: {e}", "WARN")
     return {"pl_title":pl_title,"entries":entries,"formats":formats}
 
-def has_ffmpeg():
-    """تحقق إذا كان ffmpeg متاحاً في البيئة الحالية"""
-    try:
-        r = subprocess.run(["ffmpeg", "-version"], capture_output=True, timeout=5)
-        return r.returncode == 0
-    except Exception:
-        return False
-
-FFMPEG_AVAILABLE = has_ffmpeg()
-LOG(f"{'✅' if FFMPEG_AVAILABLE else '⚠️'} ffmpeg: {'متاح' if FFMPEG_AVAILABLE else 'غير متاح — سيُستخدم صيغة واحدة فقط'}")
-
 def pick_format(format_id, all_formats, mode):
-    """
-    إذا لم يكن ffmpeg متاحاً، نختار صيغة تحتوي على صوت+فيديو معاً (no merge needed).
-    """
-    if mode == "audio":
-        if FFMPEG_AVAILABLE:
-            return "bestaudio/best", "mp3"
-        else:
-            # بدون ffmpeg: حمّل أفضل صيغة فيها صوت مباشرة
-            return "bestaudio[ext=m4a]/bestaudio[ext=webm]/bestaudio/best", None
-
-    if not FFMPEG_AVAILABLE:
-        # بدون ffmpeg: نحتاج صيغة فيها صوت وفيديو معاً (progressive)
-        if format_id == "best":
-            return "best[ext=mp4]/best", None
-        sel = next((f for f in all_formats if f["format_id"] == format_id), None)
-        if sel and sel.get("acodec", "none") != "none":
-            # الصيغة المطلوبة لها صوت — يمكن تحميلها مباشرة
-            return format_id, None
-        # الصيغة بدون صوت → ابحث عن أقرب صيغة progressive بنفس الدقة
-        target_h = (sel.get("height") or 0) if sel else 0
-        progressive = [f for f in all_formats
-                       if f.get("acodec", "none") != "none"
-                       and f.get("vcodec", "none") != "none"
-                       and f.get("ext") == "mp4"]
-        if progressive:
-            # اختر الأقرب للدقة المطلوبة
-            progressive.sort(key=lambda f: abs((f.get("height") or 0) - target_h))
-            return progressive[0]["format_id"], None
-        return "best[ext=mp4]/best", None
-
-    # ffmpeg متاح — المسار الطبيعي
-    if format_id == "best": return "bestvideo+bestaudio/best", None
-    sel = next((f for f in all_formats if f["format_id"] == format_id), None)
-    if not sel: return f"{format_id}+bestaudio/best", None
-    v_ext = sel.get("ext", "mp4"); has_audio = sel.get("acodec", "none") != "none"
+    if mode == "audio": return "bestaudio/best","mp3"
+    if format_id == "best": return "bestvideo+bestaudio/best",None
+    sel = next((f for f in all_formats if f["format_id"]==format_id), None)
+    if not sel: return f"{format_id}+bestaudio/best",None
+    v_ext = sel.get("ext","mp4"); has_audio = sel.get("acodec","none") != "none"
     if has_audio: return format_id, None
     if v_ext == "webm":
-        return f"{format_id}+bestaudio[ext=webm]/bestaudio[acodec=opus]/bestaudio", "webm"
-    return f"{format_id}+bestaudio[ext=m4a]/bestaudio[acodec=aac]/bestaudio", "mp4"
+        return f"{format_id}+bestaudio[ext=webm]/bestaudio[acodec=opus]/bestaudio","webm"
+    return f"{format_id}+bestaudio[ext=m4a]/bestaudio[acodec=aac]/bestaudio","mp4"
 
 def quality_label(format_id, all_formats, mode):
     if mode == "audio": return "MP3"
@@ -356,19 +315,13 @@ def run_download(url, format_id, mode):
             dl_opts.update({"format":req_fmt,
                 "outtmpl":os.path.join(SAVE_PATH, f"{out_name}.%(ext)s"),
                 "progress_hooks":[hook],"noprogress":True,"overwrites":True,"continuedl":True})
-            if merge_ext and FFMPEG_AVAILABLE:
-                dl_opts["merge_output_format"] = merge_ext
-            if mode == "audio" and FFMPEG_AVAILABLE:
+            if merge_ext: dl_opts["merge_output_format"] = merge_ext
+            if mode == "audio":
                 dl_opts["postprocessors"] = [{"key":"FFmpegExtractAudio",
                                                "preferredcodec":"mp3","preferredquality":"192"}]
             with yt_dlp.YoutubeDL(dl_opts) as ydl:
                 ydl.download([url])
-            if mode == "audio":
-                ext = "mp3" if FFMPEG_AVAILABLE else "m4a"
-            elif merge_ext and FFMPEG_AVAILABLE:
-                ext = merge_ext
-            else:
-                ext = "mp4"
+            ext   = "mp3" if mode == "audio" else (merge_ext or "mp4")
             fname = f"{out_name}.{ext}"
             if not os.path.exists(os.path.join(SAVE_PATH, fname)):
                 newer = sorted([f for f in Path(SAVE_PATH).glob(f"{out_name}*") if f.is_file()],
@@ -426,19 +379,13 @@ def run_playlist_download(entries, format_id, mode):
                     "outtmpl":os.path.join(SAVE_PATH, f"{out_name}.%(ext)s"),
                     "progress_hooks":[pl_hook],"noprogress":True,
                     "overwrites":False,"continuedl":True,"ignoreerrors":False})
-                if merge_ext and FFMPEG_AVAILABLE:
-                    dl_opts["merge_output_format"] = merge_ext
-                if mode == "audio" and FFMPEG_AVAILABLE:
+                if merge_ext: dl_opts["merge_output_format"] = merge_ext
+                if mode == "audio":
                     dl_opts["postprocessors"] = [{"key":"FFmpegExtractAudio",
                                                    "preferredcodec":"mp3","preferredquality":"192"}]
                 with yt_dlp.YoutubeDL(dl_opts) as ydl:
                     ydl.download([url])
-                if mode == "audio":
-                    ext = "mp3" if FFMPEG_AVAILABLE else "m4a"
-                elif merge_ext and FFMPEG_AVAILABLE:
-                    ext = merge_ext
-                else:
-                    ext = "mp4"
+                ext   = "mp3" if mode == "audio" else (merge_ext or "mp4")
                 fname = f"{out_name}.{ext}"
                 if not os.path.exists(os.path.join(SAVE_PATH, fname)):
                     newer = sorted([f for f in Path(SAVE_PATH).glob(f"{out_name}*") if f.is_file()],
