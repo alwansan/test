@@ -6,17 +6,40 @@ app:
   version: 1.4.0
   build_number: 14
 
+permissions:
+  - storage
+  - manageExternalStorage
+  - videos
+  - audio
+  - ignoreBatteryOptimizations
+  - notification
+  - scheduleExactAlarm
+  - systemAlertWindow
+  - requestInstallPackages
+
 android:
   permissions:
-    - INTERNET
-    - ACCESS_NETWORK_STATE
-    - ACCESS_WIFI_STATE
-    - WRITE_EXTERNAL_STORAGE
-    - READ_EXTERNAL_STORAGE
-    - MANAGE_EXTERNAL_STORAGE
-    - REQUEST_IGNORE_BATTERY_OPTIMIZATIONS
-    - FOREGROUND_SERVICE
-    - WAKE_LOCK
-  meta_data:
-    - name: android.requestLegacyExternalStorage
-      value: "true"
+    android.permission.INTERNET: true
+    android.permission.ACCESS_NETWORK_STATE: true
+    android.permission.ACCESS_WIFI_STATE: true
+    android.permission.WRITE_EXTERNAL_STORAGE: true
+    android.permission.READ_EXTERNAL_STORAGE: true
+    android.permission.MANAGE_EXTERNAL_STORAGE: true
+    android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS: true
+    android.permission.FOREGROUND_SERVICE: true
+    android.permission.FOREGROUND_SERVICE_DATA_SYNC: true
+    android.permission.WAKE_LOCK: true
+    android.permission.RECEIVE_BOOT_COMPLETED: true
+    android.permission.USE_FULL_SCREEN_INTENT: true
+    android.permission.SCHEDULE_EXACT_ALARM: true
+    android.permission.USE_EXACT_ALARM: true
+    android.permission.POST_NOTIFICATIONS: true
+    android.permission.READ_MEDIA_VIDEO: true
+    android.permission.READ_MEDIA_AUDIO: true
+    android.permission.READ_MEDIA_IMAGES: true
+    android.permission.SYSTEM_ALERT_WINDOW: true
+    android.permission.REQUEST_INSTALL_PACKAGES: true
+  manifest_application:
+    android:requestLegacyExternalStorage: "true"
+    android:usesCleartextTraffic: "true"
+    android:allowBackup: "false"
