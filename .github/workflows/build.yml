@@ -18,14 +18,13 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Install Flet
-        run: pip install flet
-
-      - name: Install dependencies
+      - name: Install system dependencies
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y -qq openjdk-17-jdk wget
-          sudo apt-get install -y -qq ffmpeg
+
+      - name: Install Flet
+        run: pip install flet
 
       - name: Build APK
         run: yes | flet build apk --verbose
