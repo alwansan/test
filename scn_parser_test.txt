@@ -1,0 +1,655 @@
+====================================================================================================
+FILE: ys_romfs/data/scn/s_0000.bin
+SIZE: 30228
+
+TEXT RECORD #1
+record_offset = 0xEE4
+length        = 0x78 (120)
+flags         = 0x0
+text_offset   = 0xEF0
+text_bytes    = 107
+raw_hex:
+2a 20 41 66 74 65 72 20 61 20 6c 6f 6e 67 20 6a 6f 75 72 6e 65 79 81 41 20 41 64 6f 6c 20 61 6e 64 5c 6e 20 20 44 6f 67 69 20 66 69 6e 61 6c 6c 79 20 61 72 72 69 76 65 20 69 6e 20 44 6f 67 69 27 73 5c 6e 20 20 62 69 72 74 68 70 6c 61 63 65 3a 20 74 68 65 20 6c 61 6e 64 20 6f 66 20 46 65 6c 67 68 61 6e 61 2e 5c 6e 5c 6e
+decoded:
+"* After a long journey、 Adol and\\n  Dogi finally arrive in Dogi's\\n  birthplace: the land of Felghana.\\n\\n"
+
+TEXT RECORD #2
+record_offset = 0xF5C
+length        = 0xF4 (244)
+flags         = 0x1
+text_offset   = 0xF68
+text_bytes    = 229
+raw_hex:
+2a 20 4f 6e 20 74 68 65 69 72 20 77 61 79 20 74 6f 20 74 68 65 20 74 6f 77 6e 20 6f 66 5c 6e 20 20 52 65 64 6d 6f 6e 74 81 41 20 74 68 65 79 20 65 6e 63 6f 75 6e 74 65 72 20 61 20 67 69 72 6c 5c 6e 20 20 77 68 6f 27 73 20 62 65 65 6e 20 63 6f 72 6e 65 72 65 64 20 62 79 20 6d 6f 6e 73 74 65 72 73 2e 5c 6e 20 20 41 64 6f 6c 20 73 61 76 65 73 20 68 65 72 20 66
+decoded:
+"* On their way to the town of\\n  Redmont、 they encounter a girl\\n  who's been cornered by monsters.\\n  Adol saves her from her fate、\\n  and learns that she's actually\\n  a childhood friend of Dogi's\\n  named Elena Stoddart.\\n\\n"
+
+TEXT RECORD #3
+record_offset = 0x1050
+length        = 0xD4 (212)
+flags         = 0x2
+text_offset   = 0x105C
+text_bytes    = 197
+raw_hex:
+2a 20 41 73 20 41 64 6f 6c 81 41 20 44 6f 67 69 20 61 6e 64 20 45 6c 65 6e 61 20 72 65 61 63 68 20 74 68 65 5c 6e 20 20 74 6f 77 6e 20 6f 66 20 52 65 64 6d 6f 6e 74 81 41 20 74 68 65 79 20 61 72 65 20 67 72 65 65 74 65 64 5c 6e 20 20 62 79 20 74 68 65 20 67 61 74 65 6b 65 65 70 65 72 81 41 20 47 61 72 64 6e 65 72 2e 5c 6e 20 20 41 63 63 6f 72 64 69 6e 67 20
+decoded:
+'* As Adol、 Dogi and Elena reach the\\n  town of Redmont、 they are greeted\\n  by the gatekeeper、 Gardner.\\n  According to him、 monsters began\\n  showing up in Felghana around one\\n  year ago.\\n\\n'
+
+TEXT RECORD #4
+record_offset = 0x1124
+length        = 0x100 (256)
+flags         = 0x3
+text_offset   = 0x1130
+text_bytes    = 243
+raw_hex:
+2a 20 55 70 6f 6e 20 65 6e 74 65 72 69 6e 67 20 74 68 65 20 74 6f 77 6e 81 41 20 44 6f 67 69 5c 6e 20 20 68 65 61 64 73 20 72 69 67 68 74 20 66 6f 72 20 74 68 65 20 69 6e 6e 20 77 68 65 72 65 20 68 65 5c 6e 20 20 6c 69 76 65 64 20 61 6e 64 20 77 6f 72 6b 65 64 20 61 73 20 61 20 63 68 69 6c 64 2e 5c 6e 20 20 54 68 65 72 65 81 41 20 45 6c 65 6e 61 20 74 61 6b
+decoded:
+'* Upon entering the town、 Dogi\\n  heads right for the inn where he\\n  lived and worked as a child.\\n  There、 Elena takes her leave. As\\n  they enter the inn、 they are\\n  greeted warmly by Margo、 who was\\n  always like a mother to Dogi.\\n\\n'
+
+TEXT RECORD #5
+record_offset = 0x1224
+length        = 0x188 (392)
+flags         = 0x4
+text_offset   = 0x1230
+text_bytes    = 376
+raw_hex:
+2a 20 54 68 65 20 6e 65 78 74 20 6d 6f 72 6e 69 6e 67 81 41 20 44 6f 67 69 20 74 65 6c 6c 73 20 41 64 6f 6c 5c 6e 20 20 74 68 61 74 20 68 65 20 70 6c 61 6e 73 20 74 6f 20 67 6f 20 73 65 65 20 68 69 73 20 6f 6c 64 5c 6e 20 20 6d 61 73 74 65 72 20 69 6e 20 74 68 65 20 45 6c 64 65 72 6d 20 4d 6f 75 6e 74 61 69 6e 73 2d 2d 5c 6e 20 20 74 68 65 20 6d 61 6e 20 77
+decoded:
+"* The next morning、 Dogi tells Adol\\n  that he plans to go see his old\\n  master in the Elderm Mountains--\\n  the man who taught him everything\\n  he knows about combat. Dogi\\n  believes his master may have\\n  some idea as to why monsters\\n  have come to Felghana. As Dogi\\n  doesn't plan to be gone for long、\\n  he suggests Adol take this chance\\n  to explore the town.\\n\\n"
+
+TEXT RECORD #6
+record_offset = 0x13AC
+length        = 0x150 (336)
+flags         = 0x5
+text_offset   = 0x13B8
+text_bytes    = 323
+raw_hex:
+2a 20 41 64 6f 6c 20 76 69 73 69 74 73 20 45 6c 65 6e 61 27 73 20 68 6f 75 73 65 81 41 20 77 68 65 72 65 5c 6e 20 20 68 65 20 6c 65 61 72 6e 73 20 74 68 61 74 20 68 65 72 20 62 72 6f 74 68 65 72 81 41 5c 6e 20 20 43 68 65 73 74 65 72 2d 2d 20 61 6e 6f 74 68 65 72 20 6f 6c 64 20 66 72 69 65 6e 64 20 6f 66 5c 6e 20 20 44 6f 67 69 27 73 2d 2d 20 6c 65 66 74 20
+decoded:
+"* Adol visits Elena's house、 where\\n  he learns that her brother、\\n  Chester-- another old friend of\\n  Dogi's-- left town over six\\n  months ago and has yet to return.\\n  She was hesitant to say anything\\n  about this to Dogi、 but for some\\n  reason、 she seems to have no\\n  trouble speaking her mind with\\n  Adol.\\n\\n"
+
+TEXT RECORD #7
+record_offset = 0x14FC
+length        = 0xF8 (248)
+flags         = 0x6
+text_offset   = 0x1508
+text_bytes    = 235
+raw_hex:
+2a 20 41 73 20 41 64 6f 6c 20 63 6f 6e 74 69 6e 75 65 73 20 68 69 73 20 77 61 6c 6b 5c 6e 20 20 74 68 72 6f 75 67 68 20 74 6f 77 6e 81 41 20 68 65 20 6f 76 65 72 68 65 61 72 73 20 6c 6f 75 64 81 41 5c 6e 20 20 70 61 6e 69 63 6b 65 64 20 76 6f 69 63 65 73 2e 20 54 68 65 20 76 6f 69 63 65 73 5c 6e 20 20 62 65 6c 6f 6e 67 20 74 6f 20 47 61 72 64 6e 65 72 20 61
+decoded:
+'* As Adol continues his walk\\n  through town、 he overhears loud、\\n  panicked voices. The voices\\n  belong to Gardner and a man who\\n  looks to be a laborer. It seems\\n  the laborer has come to report an\\n  emergency of some sort.\\n\\n'
+
+TEXT RECORD #8
+record_offset = 0x15F4
+length        = 0x13C (316)
+flags         = 0x7
+text_offset   = 0x1600
+text_bytes    = 303
+raw_hex:
+2a 20 48 69 73 20 6e 61 6d 65 20 69 73 20 52 69 63 61 72 64 6f 81 41 20 61 6e 64 20 68 65 20 77 6f 72 6b 73 5c 6e 81 40 61 74 20 74 68 65 20 54 69 67 72 61 79 20 51 75 61 72 72 79 2e 20 41 63 63 6f 72 64 69 6e 67 5c 6e 81 40 74 6f 20 68 69 6d 81 41 20 6d 6f 6e 73 74 65 72 73 20 73 75 64 64 65 6e 6c 79 20 70 6f 75 72 65 64 5c 6e 81 40 66 72 6f 6d 20 74 68 65
+decoded:
+"* His name is Ricardo、 and he works\\n\u3000at the Tigray Quarry. According\\n\u3000to him、 monsters suddenly poured\\n\u3000from the mines en masse. Worse\\n\u3000still、 Redmont's mayor、 Edgar、\\n\u3000was in the quarry at the time\\n\u3000and never made it out. The head\\n\u3000miner、 Dewey、 went back in to\\n\u3000look for him.\\n\\n"
+
+TEXT RECORD #9
+record_offset = 0x1754
+length        = 0x168 (360)
+flags         = 0x0
+text_offset   = 0x1760
+text_bytes    = 345
+raw_hex:
+2a 20 47 61 72 64 6e 65 72 20 77 69 73 68 65 73 20 68 65 20 63 6f 75 6c 64 20 67 6f 20 72 65 73 63 75 65 5c 6e 20 20 74 68 65 20 6d 61 79 6f 72 20 61 6e 64 20 44 65 77 65 79 81 41 20 62 75 74 20 68 65 27 73 5c 6e 20 20 6e 65 65 64 65 64 20 69 6e 20 74 6f 77 6e 81 41 20 73 69 6e 63 65 20 6e 6f 20 6f 6e 65 20 65 6c 73 65 5c 6e 20 20 69 6e 20 61 6c 6c 20 6f 66
+decoded:
+"* Gardner wishes he could go rescue\\n  the mayor and Dewey、 but he's\\n  needed in town、 since no one else\\n  in all of Redmont has the skills\\n  or training to keep everyone\\n  safe. As such、 he and Ricardo\\n  reluctantly decide to ask Adol\\n  to go in their place. And of\\n  course、 Adol would never turn\\n  down a chance for adventure!\\n\\n"
+
+TEXT RECORD #10
+record_offset = 0x18BC
+length        = 0xE8 (232)
+flags         = 0x1
+text_offset   = 0x18C8
+text_bytes    = 218
+raw_hex:
+2a 20 55 70 6f 6e 20 61 72 72 69 76 61 6c 20 61 74 20 74 68 65 20 54 69 67 72 61 79 5c 6e 20 20 51 75 61 72 72 79 81 41 20 41 64 6f 6c 20 69 73 20 67 72 65 65 74 65 64 20 62 79 20 61 5c 6e 20 20 6d 69 6e 65 72 20 6e 61 6d 65 64 20 50 61 75 6c 2e 20 53 65 65 6d 73 20 4d 61 79 6f 72 5c 6e 20 20 45 64 67 61 72 20 69 73 20 73 74 75 63 6b 20 70 72 65 74 74 79 20
+decoded:
+'* Upon arrival at the Tigray\\n  Quarry、 Adol is greeted by a\\n  miner named Paul. Seems Mayor\\n  Edgar is stuck pretty deep\\n  inside、 so Dewey went in after\\n  him、 leaving Paul behind to\\n  guard the entrance.\\n\\n'
+
+TEXT RECORD #11
+record_offset = 0x19A4
+length        = 0x140 (320)
+flags         = 0x2
+text_offset   = 0x19B0
+text_bytes    = 306
+raw_hex:
+2a 20 41 64 6f 6c 20 66 69 6e 64 73 20 44 65 77 65 79 81 41 20 61 6e 64 20 6c 65 61 72 6e 73 20 74 68 61 74 5c 6e 20 20 45 64 67 61 72 20 69 73 20 66 61 72 74 68 65 72 20 69 6e 2d 2d 20 62 75 74 20 74 68 65 5c 6e 20 20 6d 69 6e 65 20 61 68 65 61 64 20 69 73 20 69 6e 66 65 73 74 65 64 20 77 69 74 68 5c 6e 20 20 6d 6f 6e 73 74 65 72 73 20 69 6e 76 75 6c 6e 65
+decoded:
+'* Adol finds Dewey、 and learns that\\n  Edgar is farther in-- but the\\n  mine ahead is infested with\\n  monsters invulnerable to physical\\n  attacks、 making it virtually\\n  impassable. Dewey gives Adol the\\n  key to the quarry storehouse、 \\n  suggesting there may be an item\\n  of some use therein.\\n\\n\\n'
+
+TEXT RECORD #12
+record_offset = 0x1AE4
+length        = 0x170 (368)
+flags         = 0x3
+text_offset   = 0x1AF0
+text_bytes    = 353
+raw_hex:
+2a 20 41 64 6f 6c 20 65 6e 74 65 72 73 20 74 68 65 20 73 74 6f 72 65 68 6f 75 73 65 20 61 6e 64 5c 6e 20 20 69 73 20 61 6c 6d 6f 73 74 20 69 6d 6d 65 64 69 61 74 65 6c 79 20 61 63 63 6f 73 74 65 64 20 62 79 5c 6e 20 20 61 20 6d 79 73 74 65 72 69 6f 75 73 20 76 6f 69 63 65 20 66 72 6f 6d 20 62 65 68 69 6e 64 2e 5c 6e 20 20 54 68 65 20 76 6f 69 63 65 20 62 65
+decoded:
+'* Adol enters the storehouse and\\n  is almost immediately accosted by\\n  a mysterious voice from behind.\\n  The voice belongs to a shadowy\\n  sorcerer named Dularn、 who\\n  appears out of nowhere and \\n  challenges him to a fight. Adol\\n  wins、 and Dularn mumbles some-\\n  thing incomprehensible before\\n  once again vanishing into \\n  nothingness.\\n\\n'
+
+TEXT RECORD #13
+record_offset = 0x1C54
+length        = 0x108 (264)
+flags         = 0x4
+text_offset   = 0x1C60
+text_bytes    = 249
+raw_hex:
+2a 20 49 6e 20 74 68 65 20 62 61 63 6b 20 6f 66 20 74 68 65 20 73 74 6f 72 65 68 6f 75 73 65 81 41 5c 6e 20 20 41 64 6f 6c 20 66 69 6e 64 73 20 61 20 62 65 61 75 74 69 66 75 6c 81 41 20 6f 6c 64 2d 5c 6e 20 20 66 61 73 68 69 6f 6e 65 64 20 62 72 61 63 65 6c 65 74 20 77 69 74 68 20 61 20 72 75 62 79 5c 6e 20 20 73 65 74 74 69 6e 67 2e 20 41 73 20 69 66 20 67
+decoded:
+'* In the back of the storehouse、\\n  Adol finds a beautiful、 old-\\n  fashioned bracelet with a ruby\\n  setting. As if guided by unseen\\n  hands、 he places the bracelet on\\n  his wrist. Suddenly、 an awesome\\n  power wells up from within him...\\n\\n'
+
+TEXT RECORD #14
+record_offset = 0x1D5C
+length        = 0x1A8 (424)
+flags         = 0x5
+text_offset   = 0x1D68
+text_bytes    = 408
+raw_hex:
+2a 20 46 69 6e 61 6c 6c 79 81 41 20 69 6e 20 74 68 65 20 76 65 72 79 20 64 65 65 70 65 73 74 20 70 61 72 74 5c 6e 20 20 6f 66 20 74 68 65 20 6d 69 6e 65 81 41 20 41 64 6f 6c 20 66 69 6e 64 73 20 4d 61 79 6f 72 5c 6e 20 20 45 64 67 61 72 2e 20 54 68 6f 75 67 68 20 73 61 66 65 81 41 20 74 68 65 20 6d 61 79 6f 72 5c 6e 20 20 68 75 72 74 20 68 69 73 20 6c 65 67
+decoded:
+"* Finally、 in the very deepest part\\n  of the mine、 Adol finds Mayor\\n  Edgar. Though safe、 the mayor\\n  hurt his leg fleeing from\\n  monsters、 and is thus unable to\\n  get out. In addition、 he's\\n  concerned about the old ruins\\n  behind him、 and laments that his\\n  leg is keeping him from doing a \\n  proper investigation. He asks\\n  Adol to check them out in his \\n  place、 and Adol accepts.\\n\\n\\n"
+
+TEXT RECORD #15
+record_offset = 0x1F04
+length        = 0x1F0 (496)
+flags         = 0x6
+text_offset   = 0x1F10
+text_bytes    = 483
+raw_hex:
+2a 20 41 74 20 74 68 65 20 62 61 63 6b 20 6f 66 20 74 68 65 20 72 75 69 6e 73 81 41 20 41 64 6f 6c 5c 6e 20 20 73 65 65 73 20 61 20 6c 61 72 67 65 20 73 74 61 74 75 65 2e 20 55 70 6f 6e 20 67 6f 69 6e 67 5c 6e 20 20 69 6e 20 66 6f 72 20 61 20 63 6c 6f 73 65 72 20 6c 6f 6f 6b 81 41 20 74 68 65 20 73 74 61 74 75 65 5c 6e 20 20 63 6f 6d 65 73 20 74 6f 20 6c 69
+decoded:
+'* At the back of the ruins、 Adol\\n  sees a large statue. Upon going\\n  in for a closer look、 the statue\\n  comes to life with a brilliant\\n  flash of light、 taking on the\\n  form of a woman both beautiful\\n\u3000and disturbing in countenance. A\\n\u3000fierce battle ensues、 but thanks\\n\u3000to the bracelet he found in the\\n\u3000storehouse、 Adol manages to come\\n\u3000out on top. Upon defeating this\\n\u3000living statue、 Adol finds a\\n\u3000smaller、 glowing statue、 which he\\n\u3000takes with him.\\n\\n\\n'
+
+TEXT RECORD #16
+record_offset = 0x20F4
+length        = 0x13C (316)
+flags         = 0x7
+text_offset   = 0x2100
+text_bytes    = 301
+raw_hex:
+2a 20 41 66 74 65 72 20 74 68 65 20 62 61 74 74 6c 65 81 41 20 41 64 6f 6c 20 65 78 69 74 73 20 74 68 65 5c 6e 81 40 72 75 69 6e 73 20 6f 6e 6c 79 20 74 6f 20 66 69 6e 64 20 45 6c 65 6e 61 27 73 5c 6e 81 40 65 73 74 72 61 6e 67 65 64 20 62 72 6f 74 68 65 72 81 41 20 43 68 65 73 74 65 72 81 41 5c 6e 81 40 61 63 63 6f 73 74 69 6e 67 20 4d 61 79 6f 72 20 45 64
+decoded:
+"* After the battle、 Adol exits the\\n\u3000ruins only to find Elena's\\n\u3000estranged brother、 Chester、\\n\u3000accosting Mayor Edgar. Chester\\n\u3000introduces himself as a knight in\\n\u3000service of Felghana's lord、 Count\\n\u3000McGuire、 and warns Adol not to\\n\u3000get involved in the affairs of\\n\u3000others-- or else!\\n\\n"
+
+TEXT RECORD #17
+record_offset = 0x2230
+length        = 0x14C (332)
+flags         = 0x8
+text_offset   = 0x223C
+text_bytes    = 319
+raw_hex:
+2a 20 41 64 6f 6c 20 65 73 63 6f 72 74 73 20 4d 61 79 6f 72 20 45 64 67 61 72 20 61 6e 64 5c 6e 81 40 44 65 77 65 79 20 73 61 66 65 6c 79 20 62 61 63 6b 20 74 6f 20 52 65 64 6d 6f 6e 74 81 41 5c 6e 81 40 74 68 65 6e 20 64 72 6f 70 73 20 62 79 20 74 68 65 20 6d 61 79 6f 72 27 73 20 68 6f 75 73 65 5c 6e 81 40 74 6f 20 61 73 63 65 72 74 61 69 6e 20 65 78 61 63
+decoded:
+"* Adol escorts Mayor Edgar and\\n\u3000Dewey safely back to Redmont、\\n\u3000then drops by the mayor's house\\n\u3000to ascertain exactly what's\\n\u3000happening. Mayor Edgar laments\\n\u3000the man Chester's become、 and\\n\u3000wonders how he'll tell Elena--\\n\u3000but Elena、 who had stopped by to\\n\u3000check up on him、 overheard\\n\u3000everything!\\n\\n"
+
+TEXT RECORD #18
+record_offset = 0x23A4
+length        = 0x1DC (476)
+flags         = 0x0
+text_offset   = 0x23B0
+text_bytes    = 462
+raw_hex:
+2a 20 41 64 6f 6c 20 73 77 69 6e 67 73 20 62 79 20 74 68 65 20 63 68 75 72 63 68 20 61 6e 64 5c 6e 20 20 6c 65 61 72 6e 73 20 66 72 6f 6d 20 42 69 73 68 6f 70 20 4e 69 6b 6f 6c 61 73 20 61 6e 64 5c 6e 20 20 53 69 73 74 65 72 20 4e 65 6c 6c 20 74 68 61 74 20 46 61 74 68 65 72 20 50 69 65 72 72 65 5c 6e 20 20 68 61 73 20 67 6f 6e 65 20 6f 66 66 20 62 79 20 68
+decoded:
+"* Adol swings by the church and\\n  learns from Bishop Nikolas and\\n  Sister Nell that Father Pierre\\n  has gone off by himself to an\\n  old pagan temple known as the\\n  Illburns Ruins、 now maintained\\n  and regulated by the diocese.\\n  Rumor has it that these temple\\n  ruins are monster-infested and\\n  extremely dangerous. The bishop\\n  asks Adol to go after Father\\n  Pierre and confirm his safety、\\n  and gives Adol a key to the\\n  temple's front gate.\\n\\n"
+
+TEXT RECORD #19
+record_offset = 0x2580
+length        = 0x270 (624)
+flags         = 0x1
+text_offset   = 0x258C
+text_bytes    = 608
+raw_hex:
+2a 20 41 73 20 41 64 6f 6c 20 70 75 73 68 65 73 20 66 6f 72 77 61 72 64 20 69 6e 74 6f 20 74 68 65 5c 6e 20 20 72 75 69 6e 73 81 41 20 68 65 20 68 65 61 72 73 20 74 68 65 20 76 6f 69 63 65 20 6f 66 5c 6e 20 20 46 61 74 68 65 72 20 50 69 65 72 72 65 81 41 20 61 6e 64 20 77 69 74 6e 65 73 73 65 73 20 68 69 6d 5c 6e 20 20 65 6e 67 61 67 65 64 20 69 6e 20 61 20
+decoded:
+"* As Adol pushes forward into the\\n  ruins、 he hears the voice of\\n  Father Pierre、 and witnesses him\\n  engaged in a heated discussion\\n  with Chester. After a few moments\\n  Chester notices Adol's presence、\\n  and reiterates that Adol was\\n  warned not to interfere. A fierce\\n  battle ensues between Chester and\\n  Adol、 only broken up by the\\n  sudden appearance of Count\\n  McGuire and his men. In an\\n  instant Adol and Father Pierre\\n  are surrounded by soldiers、 and\\n  at Chester's suggestion、 Adol is\\n  ordered to be tossed from a high\\n  precipice into the Zone of Lava\\n  deep below...\\n\\n"
+
+TEXT RECORD #20
+record_offset = 0x27F0
+length        = 0x144 (324)
+flags         = 0x2
+text_offset   = 0x27FC
+text_bytes    = 308
+raw_hex:
+2a 20 41 64 6f 6c 20 73 75 72 76 69 76 65 73 20 74 68 65 20 66 61 6c 6c 20 77 69 74 68 20 6f 6e 6c 79 5c 6e 20 20 61 20 66 65 77 20 63 75 74 73 20 61 6e 64 20 73 63 72 61 74 63 68 65 73 20 81 69 6c 75 63 6b 79 5c 6e 20 20 66 6f 72 20 68 69 6d 81 41 20 68 65 20 6c 61 6e 64 65 64 20 6f 6e 20 61 20 74 72 61 76 65 6c 5c 6e 20 20 6d 6f 6e 75 6d 65 6e 74 21 81 6a
+decoded:
+"* Adol survives the fall with only\\n  a few cuts and scratches （lucky\\n  for him、 he landed on a travel\\n  monument!） and picks himself up、\\n  only to become acutely aware of\\n  the intense heat all around him.\\n  He begins to wonder if there's\\n  any hope of escape from this\\n  hellish pit of fire!\\n\\n"
+
+TEXT RECORD #21
+record_offset = 0x2934
+length        = 0x1A0 (416)
+flags         = 0x3
+text_offset   = 0x2940
+text_bytes    = 400
+raw_hex:
+2a 20 49 6e 20 74 68 65 20 64 65 70 74 68 73 20 6f 66 20 74 68 65 20 6c 61 76 61 20 70 69 74 81 41 5c 6e 20 20 41 64 6f 6c 20 66 69 6e 64 73 20 61 6e 6f 74 68 65 72 20 61 6e 63 69 65 6e 74 2d 5c 6e 20 20 6c 6f 6f 6b 69 6e 67 20 62 72 61 63 65 6c 65 74 81 41 20 74 68 69 73 20 74 69 6d 65 20 77 69 74 68 5c 6e 20 20 61 6e 20 65 6d 65 72 61 6c 64 20 73 65 74 74
+decoded:
+'* In the depths of the lava pit、\\n  Adol finds another ancient-\\n  looking bracelet、 this time with\\n  an emerald setting. When he\\n  places it on his wrist、 he feels\\n  an entirely new power coursing\\n  through his veins. At that\\n  moment、 the sorcerer、 Dularn、\\n  makes another appearance、 simply\\n  leaving Adol with a few words of\\n  warning before once again\\n  vanishing from sight.\\n\\n'
+
+TEXT RECORD #22
+record_offset = 0x2AD4
+length        = 0x124 (292)
+flags         = 0x4
+text_offset   = 0x2AE0
+text_bytes    = 278
+raw_hex:
+2a 20 41 64 6f 6c 20 64 6f 75 62 6c 65 73 20 62 61 63 6b 20 61 66 74 65 72 20 61 63 71 75 69 72 69 6e 67 5c 6e 81 40 74 68 69 73 20 62 72 61 63 65 6c 65 74 81 41 20 6f 6e 6c 79 20 74 6f 20 62 65 5c 6e 81 40 61 74 74 61 63 6b 65 64 20 66 72 6f 6d 20 62 65 68 69 6e 64 20 62 79 20 61 20 76 69 63 69 6f 75 73 5c 6e 81 40 66 69 72 65 77 79 72 6d 2e 20 54 68 65 20
+decoded:
+'* Adol doubles back after acquiring\\n\u3000this bracelet、 only to be\\n\u3000attacked from behind by a vicious\\n\u3000firewyrm. The battle gets quite\\n\u3000heated （both literally and\\n\u3000figuratively）、 but with a new\\n\u3000wind power at his disposal、 Adol\\n\u3000ultimately emerges the victor.\\n\\n'
+
+TEXT RECORD #23
+record_offset = 0x2BF8
+length        = 0x13C (316)
+flags         = 0x5
+text_offset   = 0x2C04
+text_bytes    = 303
+raw_hex:
+2a 20 41 64 6f 6c 20 65 6e 74 65 72 73 20 61 20 77 69 64 65 81 41 20 6f 70 65 6e 20 63 61 76 65 72 6e 5c 6e 81 40 74 68 61 74 20 73 65 65 6d 73 20 74 6f 20 73 75 67 67 65 73 74 20 68 65 27 73 5c 6e 81 40 63 6c 6f 73 69 6e 67 20 69 6e 20 6f 6e 20 74 68 65 20 65 78 69 74 20 74 6f 20 74 68 69 73 5c 6e 81 40 66 69 65 72 79 20 6d 61 7a 65 2e 20 48 65 20 72 75 73
+decoded:
+"* Adol enters a wide、 open cavern\\n\u3000that seems to suggest he's\\n\u3000closing in on the exit to this\\n\u3000fiery maze. He rushes forward、\\n\u3000only to find himself confronted\\n\u3000by a massive、 winged monster.\\n\u3000Upon its defeat、 it drops a\\n\u3000statue very similar to the one\\n\u3000found in the Tigray Quarry.\\n\\n"
+
+TEXT RECORD #24
+record_offset = 0x2D34
+length        = 0x2B4 (692)
+flags         = 0x6
+text_offset   = 0x2D40
+text_bytes    = 679
+raw_hex:
+2a 20 53 75 63 63 65 73 73 66 75 6c 6c 79 20 65 73 63 61 70 69 6e 67 20 74 68 65 20 5a 6f 6e 65 20 6f 66 5c 6e 81 40 4c 61 76 61 81 41 20 41 64 6f 6c 20 66 69 6e 64 73 20 43 68 65 73 74 65 72 20 6c 79 69 6e 67 20 69 6e 5c 6e 81 40 77 61 69 74 20 66 6f 72 20 68 69 6d 2e 20 43 68 65 73 74 65 72 20 64 65 6d 61 6e 64 73 5c 6e 81 40 41 64 6f 6c 20 68 61 6e 64 20
+decoded:
+"* Successfully escaping the Zone of\\n\u3000Lava、 Adol finds Chester lying in\\n\u3000wait for him. Chester demands\\n\u3000Adol hand over the two statues、\\n\u3000and is clearly willing to bring\\n\u3000harm to him if he doesn't. It's\\n\u3000at this point that Elena and Dogi\\n\u3000show up. Elena confronts Chester、\\n\u3000desperate to know why he hasn't\\n\u3000contacted her even once in the\\n\u3000last six months. Chester shrugs\\n\u3000off the question by coldly\\n\u3000dismissing his sister as a chain\\n\u3000that's held him back for far too\\n\u3000long. He then takes his leave--\\n\u3000WITHOUT the statues. On his way\\n\u3000out、 he says his goodbyes to Dogi\\n\u3000as well、 accompanied by a warning\\n\u3000not to interfere with his plans.\\n\\n"
+
+TEXT RECORD #25
+record_offset = 0x3010
+length        = 0x3B8 (952)
+flags         = 0x0
+text_offset   = 0x301C
+text_bytes    = 937
+raw_hex:
+2a 20 41 64 6f 6c 20 6f 6e 63 65 20 61 67 61 69 6e 20 72 65 74 75 72 6e 73 20 74 6f 20 74 68 65 5c 6e 20 20 6d 61 79 6f 72 27 73 20 68 6f 75 73 65 20 74 6f 20 73 6f 72 74 20 6f 75 74 20 77 68 61 74 5c 6e 20 20 65 78 61 63 74 6c 79 20 69 73 20 68 61 70 70 65 6e 69 6e 67 2e 20 53 6f 20 66 61 72 81 41 5c 6e 20 20 61 6c 6c 20 61 6e 79 6f 6e 65 20 6b 6e 6f 77 73
+decoded:
+"* Adol once again returns to the\\n  mayor's house to sort out what\\n  exactly is happening. So far、\\n  all anyone knows is that Count\\n  McGuire is seeking statues、 and\\n  using Chester to get them. The\\n  reason for this is unclear、 but\\n  it does seem as if the two\\n  statues Adol found are in some\\n  way vital to McGuire's grand\\n  scheme. Dewey claims to have seen\\n  these statues once before、 and on\\n  reflection、 he recalls that they\\n  were part of a fresco painted on\\n  the wall in an old abandoned mine\\n  at the bottom of the Tigray\\n  Quarry. The assembly convenes as\\n  Bishop Nikolas elects to lobby\\n  for Father Pierre's release at\\n  the castle、 Dogi sets off for the\\n  Elderm Mountains again to ask if\\n  his master might be able to shed\\n  some light on this mystery、 and\\n  Adol-- ever the hero-- agrees to\\n  investigate the abandoned mine\\n  for any clues to the purpose of\\n  these ominous statues.\\n\\n"
+
+TEXT RECORD #26
+record_offset = 0x33C8
+length        = 0x278 (632)
+flags         = 0x1
+text_offset   = 0x33D4
+text_bytes    = 617
+raw_hex:
+2a 20 49 6e 20 6e 6f 20 74 69 6d 65 20 61 74 20 61 6c 6c 81 41 20 41 64 6f 6c 20 64 69 73 63 6f 76 65 72 73 5c 6e 20 20 74 68 65 20 66 72 65 73 63 6f 2e 20 48 65 20 72 65 61 63 68 65 73 20 6f 75 74 20 74 6f 5c 6e 20 20 74 6f 75 63 68 20 69 74 81 41 20 61 6e 64 20 73 75 64 64 65 6e 6c 79 20 68 65 61 72 73 20 61 5c 6e 20 20 76 6f 69 63 65 20 73 70 65 61 6b 20
+decoded:
+'* In no time at all、 Adol discovers\\n  the fresco. He reaches out to\\n  touch it、 and suddenly hears a\\n  voice speak to him from within.\\n  The voice belongs to an ancient\\n  warrior named Genos who believes\\n  Adol the successor to his mission\\n\u3000and grants him numerous powers.\\n\u3000Genos also reveals the nature of\\n\u3000the statues: They seal away a\\n\u3000being of evil that once ravaged\\n\u3000the land of Felghana、 and their\\n\u3000power must not fall into the\\n\u3000wrong hands. There are four\\n\u3000statues in total、 and the last\\n\u3000two may be found within the\\n\u3000abandoned mine and high atop a\\n\u3000mountain、 respectively.\\n\\n'
+
+TEXT RECORD #27
+record_offset = 0x3640
+length        = 0x1C8 (456)
+flags         = 0x2
+text_offset   = 0x364C
+text_bytes    = 443
+raw_hex:
+2a 20 57 69 74 68 69 6e 20 74 68 65 20 64 65 65 70 65 73 74 20 63 68 61 6d 62 65 72 20 6f 66 20 74 68 65 5c 6e 81 40 61 62 61 6e 64 6f 6e 65 64 20 6d 69 6e 65 81 41 20 41 64 6f 6c 20 64 69 73 63 6f 76 65 72 73 20 61 5c 6e 81 40 63 72 79 73 74 61 6c 20 74 68 61 74 20 6d 6f 76 65 73 20 61 73 20 69 66 20 61 6c 69 76 65 2e 5c 6e 81 40 4f 6e 20 63 6c 6f 73 65 72
+decoded:
+'* Within the deepest chamber of the\\n\u3000abandoned mine、 Adol discovers a\\n\u3000crystal that moves as if alive.\\n\u3000On closer inspection、 he learns\\n\u3000that it actually is! The ground\\n\u3000rumbles and tentacles pop out、\\n\u3000intent on making Adol breathe his\\n\u3000last. After a harrowing battle\\n\u3000with the creature in the crystal、\\n\u3000Adol predictably uncovers the\\n\u3000third statue、 and makes his way\\n\u3000back out from these uncomfortable\\n\u3000depths.\\n\\n'
+
+TEXT RECORD #28
+record_offset = 0x3830
+length        = 0x394 (916)
+flags         = 0x0
+text_offset   = 0x383C
+text_bytes    = 903
+raw_hex:
+2a 20 41 64 6f 6c 20 72 65 74 75 72 6e 73 20 74 6f 20 74 68 65 20 6d 61 79 6f 72 27 73 20 68 6f 75 73 65 5c 6e 20 20 77 69 74 68 20 68 69 73 20 6e 65 77 6c 79 2d 75 6e 65 61 72 74 68 65 64 20 73 74 61 74 75 65 5c 6e 20 20 61 6e 64 20 66 69 6e 64 73 20 46 61 74 68 65 72 20 50 69 65 72 72 65 20 74 68 65 72 65 81 41 5c 6e 20 20 73 61 66 65 20 61 6e 64 20 73 6f
+decoded:
+"* Adol returns to the mayor's house\\n  with his newly-unearthed statue\\n  and finds Father Pierre there、\\n  safe and sound. After all parties\\n  are filled in on the events that\\n  have occurred、 the mayor confirms\\n  Adol's story by way of an old\\n  local legend that claims an\\n  ancient evil named Galbalan once\\n  terrorized the land、 but was\\n  ultimately sealed away by a hero\\n  named Genos. It seems to match\\n  well with what Adol heard in the\\n  abandoned mine. The mayor then\\n  goes on to reveal that there\\n  exists an island just off-shore\\n  called 'Genos Island、' upon which\\n  a village once stood-- until all\\n  its residents were wiped out by\\n  a mysterious disease. Sadly、 that\\n  seems to be all Mayor Edgar knows\\n  on the subject. He suggests Adol\\n  consult with Dogi's old master、\\n  Berhardt、 in his lone shack along\\n  the trails of the sacred Elderm\\n  Mountains.\\n\\n"
+
+TEXT RECORD #29
+record_offset = 0x3BC4
+length        = 0x140 (320)
+flags         = 0x1
+text_offset   = 0x3BD0
+text_bytes    = 306
+raw_hex:
+2a 20 41 64 6f 6c 27 73 20 63 6c 69 6d 62 20 75 70 20 74 68 65 20 6d 6f 75 6e 74 61 69 6e 73 69 64 65 5c 6e 20 20 69 73 20 69 6e 74 65 72 72 75 70 74 65 64 20 62 79 20 61 6e 6f 74 68 65 72 20 72 61 6e 64 6f 6d 5c 6e 20 20 61 70 70 65 61 72 61 6e 63 65 20 62 79 20 74 68 65 20 73 6f 72 63 65 72 65 72 81 41 5c 6e 20 20 44 75 6c 61 72 6e 81 41 20 77 68 6f 20 73
+decoded:
+"* Adol's climb up the mountainside\\n  is interrupted by another random\\n  appearance by the sorcerer、\\n  Dularn、 who summons three flying\\n  succubi to end his life. Adol\\n  makes quick work of the sisters、\\n  however、 and Dularn vanishes once\\n  more、 leaving behind only cries\\n  of incredulity.\\n\\n"
+
+TEXT RECORD #30
+record_offset = 0x3D04
+length        = 0x324 (804)
+flags         = 0x2
+text_offset   = 0x3D10
+text_bytes    = 788
+raw_hex:
+2a 20 41 74 20 6c 6f 6e 67 20 6c 61 73 74 81 41 20 41 64 6f 6c 20 6d 65 65 74 73 20 77 69 74 68 5c 6e 20 20 42 65 72 68 61 72 64 74 20 69 6e 20 68 69 73 20 6d 6f 75 6e 74 61 69 6e 20 73 68 61 63 6b 81 41 5c 6e 20 20 61 6e 64 20 69 73 20 61 73 73 75 72 65 64 20 74 68 61 74 20 74 68 65 20 6c 65 67 65 6e 64 5c 6e 20 20 6f 66 20 47 65 6e 6f 73 20 61 6e 64 20 47
+decoded:
+"* At long last、 Adol meets with\\n  Berhardt in his mountain shack、\\n  and is assured that the legend\\n  of Genos and Galbalan is no myth.\\n  Berhardt recounts the entire\\n  legend、 and posits that the four\\n  statues may have some relation to\\n  the monsters that began appearing\\n  in Felghana one year ago. He also\\n  believes that McGuire's goal in\\n  finding these statues may be to\\n  control the monsters、 creating a\\n  loyal army to do his bidding\\n  （though the idea、 he feels、 is\\n  utterly ludicrous）. Berhardt then\\n  confirms that yes、 there is\\n  likely to be one final statue\\n  hidden somewhere within these\\n  very mountains、 and Dogi has\\n  already set out into the mountain\\n  caves in search of it. Adol、\\n  unsurprisingly、 elects to go in\\n  after him.\\n\\n"
+
+TEXT RECORD #31
+record_offset = 0x4028
+length        = 0xB8 (184)
+flags         = 0x3
+text_offset   = 0x4034
+text_bytes    = 171
+raw_hex:
+2a 20 41 64 6f 6c 20 66 69 6e 64 73 20 44 6f 67 69 20 77 69 74 68 69 6e 20 74 68 65 20 63 61 76 65 73 81 41 5c 6e 20 20 73 74 61 6e 64 69 6e 67 20 61 74 20 74 68 65 20 66 6f 6f 74 20 6f 66 20 61 20 64 65 65 70 5c 6e 20 20 63 72 65 76 61 73 73 65 81 41 20 75 6e 73 75 72 65 20 68 6f 77 20 74 6f 20 67 65 74 5c 6e 20 20 61 63 72 6f 73 73 2e 20 49 74 27 73 20 6d
+decoded:
+"* Adol finds Dogi within the caves、\\n  standing at the foot of a deep\\n  crevasse、 unsure how to get\\n  across. It's much too wide for a\\n  normal jump to suffice...\\n\\n"
+
+TEXT RECORD #32
+record_offset = 0x40E0
+length        = 0x1B0 (432)
+flags         = 0x4
+text_offset   = 0x40EC
+text_bytes    = 418
+raw_hex:
+2a 20 55 73 69 6e 67 20 74 68 65 20 70 6f 77 65 72 20 6f 66 20 74 68 65 20 56 65 6e 74 75 73 5c 6e 20 20 42 72 61 63 65 6c 65 74 81 41 20 41 64 6f 6c 20 69 73 20 61 62 6c 65 20 74 6f 20 63 72 6f 73 73 5c 6e 20 20 74 68 65 20 6c 61 72 67 65 20 67 61 70 2d 2d 20 74 68 6f 75 67 68 20 44 6f 67 69 20 69 73 5c 6e 20 20 6c 65 66 74 20 62 65 68 69 6e 64 2e 20 41 64
+decoded:
+"* Using the power of the Ventus\\n  Bracelet、 Adol is able to cross\\n  the large gap-- though Dogi is\\n  left behind. Adol is thus asked\\n  to continue the search in Dogi's\\n  place、 and Dogi tosses him\\n  another bracelet found along the\\n  way. This bracelet is like the\\n  other two、 but with a topaz\\n  setting. Adol places it on his\\n  wrist、 and once again feels a new\\n  power welling up from within him.\\n\\n"
+
+TEXT RECORD #33
+record_offset = 0x4290
+length        = 0x21C (540)
+flags         = 0x5
+text_offset   = 0x429C
+text_bytes    = 526
+raw_hex:
+2a 20 49 6e 20 74 68 65 20 64 65 65 70 65 73 74 20 70 61 72 74 20 6f 66 20 74 68 65 20 45 6c 64 65 72 6d 5c 6e 20 20 4d 6f 75 6e 74 61 69 6e 73 27 20 69 63 69 65 73 74 20 63 61 76 65 72 6e 81 41 20 41 64 6f 6c 5c 6e 20 20 66 69 6e 64 73 20 68 69 6d 73 65 6c 66 20 66 61 63 65 2d 74 6f 2d 66 61 63 65 20 77 69 74 68 5c 6e 20 20 6f 6e 6c 79 20 61 6e 20 65 6e 6f
+decoded:
+"* In the deepest part of the Elderm\\n  Mountains' iciest cavern、 Adol\\n  finds himself face-to-face with\\n  only an enormous block of ice.\\n  Seemingly a dead-end、 he idly\\n  walks toward the block、 only to\\n  have the dragon that dwells\\n  within sense his presence and\\n  break free、 launching into a\\n  fearsome assault with its sharp\\n  fangs and magic-like manipulation\\n\u3000of icicles. Adol narrowly defeats\\n\u3000this opponent、 however、 and lays\\n\u3000claim to the fourth and final\\n\u3000statue sealing Galbalan's power.\\n\\n"
+
+TEXT RECORD #34
+record_offset = 0x44AC
+length        = 0x1CC (460)
+flags         = 0x6
+text_offset   = 0x44B8
+text_bytes    = 447
+raw_hex:
+2a 20 53 68 6f 72 74 6c 79 20 61 66 74 65 72 20 6f 62 74 61 69 6e 69 6e 67 20 74 68 69 73 20 6c 61 73 74 5c 6e 81 40 73 74 61 74 75 65 81 41 20 74 68 65 20 65 61 72 74 68 20 74 72 65 6d 62 6c 65 73 81 41 20 61 6e 64 5c 6e 81 40 61 20 63 61 76 65 2d 69 6e 20 74 72 61 70 73 20 41 64 6f 6c 20 69 6e 73 69 64 65 20 74 68 65 5c 6e 81 40 69 63 79 20 63 61 76 65 72
+decoded:
+"* Shortly after obtaining this last\\n\u3000statue、 the earth trembles、 and\\n\u3000a cave-in traps Adol inside the\\n\u3000icy cavern. Fortunately、 the same\\n\u3000cave-in created a temporary path\\n\u3000for Dogi、 leading him to Adol's\\n\u3000would-be tomb. Using all his\\n\u3000strength as Dogi the Wall-Crusher\\n\u3000he bursts through the mound of\\n\u3000solid stone blocking the exit、\\n\u3000freeing Adol in what would later\\n\u3000be known to historians as 'the\\n\u3000usual manner.'\\n\\n"
+
+TEXT RECORD #35
+record_offset = 0x4678
+length        = 0x510 (1296)
+flags         = 0x7
+text_offset   = 0x4684
+text_bytes    = 1280
+raw_hex:
+2a 20 55 70 6f 6e 20 74 68 65 69 72 20 73 61 66 65 20 65 78 69 74 20 62 61 63 6b 20 6f 6e 74 6f 5c 6e 81 40 74 68 65 20 6d 6f 75 6e 74 61 69 6e 20 73 6c 6f 70 65 73 81 41 20 41 64 6f 6c 20 61 6e 64 5c 6e 81 40 44 6f 67 69 20 65 6e 63 6f 75 6e 74 65 72 20 43 68 65 73 74 65 72 81 41 20 77 68 6f 20 68 61 64 5c 6e 81 40 62 65 65 6e 20 6c 79 69 6e 67 20 69 6e 20
+decoded:
+"* Upon their safe exit back onto\\n\u3000the mountain slopes、 Adol and\\n\u3000Dogi encounter Chester、 who had\\n\u3000been lying in wait for them. Dogi\\n\u3000takes this opportunity to ask\\n\u3000a question that's been on his\\n\u3000mind for some time-- namely、 what\\n\u3000does Chester REALLY intend to do\\n\u3000with the statues? Dogi had seen\\n\u3000through Chester's pretense、 aware\\n\u3000from the start that Chester could\\n\u3000not possibly share McGuire's\\n\u3000goals. Chester、 impressed with\\n\u3000Dogi's perceptiveness、 reveals\\n\u3000that he intends to get revenge on\\n\u3000McGuire for the events of twelve\\n\u3000years ago. Evidently、 Chester and\\n\u3000Elena were actually born on Genos\\n\u3000Island、 and are the only two\\n\u3000survivors of its annihilation--\\n\u3000and its residents were not killed\\n\u3000by disease、 but rather by undead\\n\u3000monsters summoned into being by a\\n\u3000sorcerer in McGuire's employ.\\n\u3000Dogi、 unsure how to react to this\\n\u3000stunning revelation、 attempts to\\n\u3000convince Chester to find another\\n\u3000way-- but Chester responds with\\n\u3000his sword、 stabbing Dogi quite\\n\u3000unexpectedly. Adol is given an\\n\u3000ultimatum: the statues、 or Dogi's\\n\u3000life. Fearing for his friend、 he\\n\u3000hands the statues to Chester and\\n\u3000quickly carries the unconscious\\n\u3000Dogi to Berhardt's shack for\\n\u3000emergency medical treatment.\\n\\n"
+
+TEXT RECORD #36
+record_offset = 0x4B88
+length        = 0x170 (368)
+flags         = 0x8
+text_offset   = 0x4B94
+text_bytes    = 352
+raw_hex:
+2a 20 57 68 69 6c 65 20 42 65 72 68 61 72 64 74 20 73 74 72 75 67 67 6c 65 73 20 74 6f 20 6b 65 65 70 5c 6e 81 40 44 6f 67 69 20 61 6c 69 76 65 81 41 20 41 64 6f 6c 20 72 65 74 75 72 6e 73 20 74 6f 20 74 6f 77 6e 81 41 5c 6e 81 40 6f 6e 6c 79 20 74 6f 20 66 69 6e 64 20 47 61 72 64 6e 65 72 20 63 6f 6c 6c 61 70 73 65 64 5c 6e 81 40 69 6e 20 66 72 6f 6e 74 20
+decoded:
+'* While Berhardt struggles to keep\\n\u3000Dogi alive、 Adol returns to town、\\n\u3000only to find Gardner collapsed\\n\u3000in front of the town gate. It\\n\u3000seems a group of soldiers from\\n\u3000Valestein Castle came attacking、\\n\u3000and overwhelmed the old man. And\\n\u3000most frighteningly of all、 some\\n\u3000of them managed to force their\\n\u3000way into the town proper...\\n\\n'
+
+TEXT RECORD #37
+record_offset = 0x4D24
+length        = 0x12C (300)
+flags         = 0x1
+text_offset   = 0x4D30
+text_bytes    = 286
+raw_hex:
+2a 20 54 68 65 20 66 69 72 73 74 20 74 68 69 6e 67 20 41 64 6f 6c 20 73 65 65 73 20 61 73 20 68 65 5c 6e 20 20 72 75 73 68 65 73 20 69 6e 74 6f 20 74 6f 77 6e 20 69 73 20 61 20 74 68 72 6f 6e 67 20 6f 66 5c 6e 20 20 77 6f 62 62 6c 79 20 73 6f 6c 64 69 65 72 73 20 73 75 72 72 6f 75 6e 64 69 6e 67 20 45 6c 65 6e 61 5c 6e 20 20 61 6e 64 20 41 6e 79 61 81 41 20
+decoded:
+'* The first thing Adol sees as he\\n  rushes into town is a throng of\\n  wobbly soldiers surrounding Elena\\n  and Anya、 slowly advancing upon\\n  them for the kill. Wasting no\\n  time、 he bravely fights off the\\n  trained warriors、 saving the two\\n  ladies from an untimely demise.\\n\\n'
+
+TEXT RECORD #38
+record_offset = 0x4E50
+length        = 0x230 (560)
+flags         = 0x2
+text_offset   = 0x4E5C
+text_bytes    = 546
+raw_hex:
+2a 20 41 64 6f 6c 20 6a 6f 69 6e 73 20 74 68 65 20 65 6d 65 72 67 65 6e 63 79 20 6d 65 65 74 69 6e 67 5c 6e 20 20 69 6e 20 4d 61 79 6f 72 20 45 64 67 61 72 27 73 20 68 6f 75 73 65 20 61 6e 64 5c 6e 20 20 64 65 73 63 72 69 62 65 73 20 74 68 65 20 65 76 65 6e 74 73 20 74 68 61 74 5c 6e 20 20 74 72 61 6e 73 70 69 72 65 64 20 69 6e 20 74 68 65 20 6d 6f 75 6e 74
+decoded:
+"* Adol joins the emergency meeting\\n  in Mayor Edgar's house and\\n  describes the events that\\n  transpired in the mountains、\\n  including all the details of\\n  Chester's past. Suddenly、 the\\n  discussion is interrupted by\\n  Sister Nell、 who rushes in to\\n  advise the mayor that Elena seems\\n  to have left town by herself、\\n  likely to chase after her brother\\n  in Valestein Castle. Adol feels\\n  partially responsible for driving\\n  Elena to this course of action、\\n  and volunteers to go bring her\\n  back-- in spite of the danger.\\n\\n"
+
+TEXT RECORD #39
+record_offset = 0x5080
+length        = 0x1FC (508)
+flags         = 0x3
+text_offset   = 0x508C
+text_bytes    = 493
+raw_hex:
+2a 20 41 64 6f 6c 20 66 69 6e 64 73 20 42 69 73 68 6f 70 20 4e 69 6b 6f 6c 61 73 20 6c 6f 63 6b 65 64 5c 6e 20 20 69 6e 20 61 20 74 6f 77 65 72 20 68 69 67 68 20 61 74 6f 70 20 74 68 65 20 63 61 73 74 6c 65 27 73 5c 6e 20 20 77 65 73 74 20 77 69 6e 67 2e 20 49 74 20 73 65 65 6d 73 20 43 68 65 73 74 65 72 20 69 73 5c 6e 20 20 61 74 74 65 6d 70 74 69 6e 67 20
+decoded:
+"* Adol finds Bishop Nikolas locked\\n  in a tower high atop the castle's\\n  west wing. It seems Chester is\\n  attempting to use the castle's\\n  clock tower to release the power\\n  sealed within the statues.\\n  Evidently、 the clock tower was\\n  built to harness spiritual energy\\n  and redirect it as needed、 and\\n  its gears have already been used\\n  to spread a vile mist throughout\\n  the castle halls、 turning all who\\n  come in contact with it into\\n  mindless、 undead abominations.\\n\\n"
+
+TEXT RECORD #40
+record_offset = 0x527C
+length        = 0x128 (296)
+flags         = 0x4
+text_offset   = 0x5288
+text_bytes    = 283
+raw_hex:
+2a 20 41 64 6f 6c 20 66 69 6e 64 73 20 43 6f 75 6e 74 20 4d 63 47 75 69 72 65 27 73 20 66 61 6d 69 6c 79 5c 6e 20 20 6c 6f 63 6b 65 64 20 69 6e 20 61 20 74 6f 77 65 72 20 68 69 67 68 20 61 74 6f 70 20 74 68 65 5c 6e 20 20 63 61 73 74 6c 65 27 73 20 65 61 73 74 20 77 69 6e 67 2e 20 41 70 70 61 72 65 6e 74 6c 79 81 41 5c 6e 20 20 43 68 65 73 74 65 72 20 63 6f
+decoded:
+"* Adol finds Count McGuire's family\\n  locked in a tower high atop the\\n  castle's east wing. Apparently、\\n  Chester confined them there for\\n  their own safety、 and told them\\n  all about the sins committed by\\n  their beloved count-- the husband\\n  and father they all adore.\\n\\n"
+
+TEXT RECORD #41
+record_offset = 0x53A4
+length        = 0x1C8 (456)
+flags         = 0x5
+text_offset   = 0x53B0
+text_bytes    = 441
+raw_hex:
+2a 20 41 66 74 65 72 20 61 20 6c 65 6e 67 74 68 79 20 74 72 65 6b 20 74 68 72 6f 75 67 68 20 74 68 65 5c 6e 20 20 77 61 74 65 72 77 61 79 20 62 65 6e 65 61 74 68 20 74 68 65 20 63 61 73 74 6c 65 81 41 20 41 64 6f 6c 5c 6e 20 20 66 69 6e 61 6c 6c 79 20 66 69 6e 64 73 20 45 6c 65 6e 61 20 6c 6f 63 6b 65 64 20 61 77 61 79 5c 6e 20 20 69 6e 20 61 20 64 61 72 6b
+decoded:
+'* After a lengthy trek through the\\n  waterway beneath the castle、 Adol\\n  finally finds Elena locked away\\n  in a dark、 dank dungeon. It seems\\n  she was successful in locating\\n  Chester、 and now knows all about\\n  his plans for vengeance （as well\\n  as her own long-forgotten past）.\\n  She strongly disagrees with his\\n  course of action、 however、 and\\n  begs Adol to stop him、 before\\n  this tragedy escalates any\\n  further.\\n\\n'
+
+TEXT RECORD #42
+record_offset = 0x556C
+length        = 0x330 (816)
+flags         = 0x6
+text_offset   = 0x5578
+text_bytes    = 803
+raw_hex:
+2a 20 41 64 6f 6c 20 63 6c 69 6d 62 73 20 74 68 65 20 63 6c 6f 63 6b 20 74 6f 77 65 72 20 61 6e 64 5c 6e 20 20 61 72 72 69 76 65 73 20 61 74 20 74 68 65 20 63 61 73 74 6c 65 20 6b 65 65 70 20 69 6e 20 74 68 65 5c 6e 20 20 6e 69 63 6b 20 6f 66 20 74 69 6d 65 2e 20 43 68 65 73 74 65 72 20 69 73 20 74 68 65 72 65 81 41 5c 6e 20 20 63 72 75 65 6c 6c 79 20 74 61
+decoded:
+"* Adol climbs the clock tower and\\n  arrives at the castle keep in the\\n  nick of time. Chester is there、\\n  cruelly taunting McGuire before\\n  striking the final blow. He\\n  senses Adol's presence and\\n  initiates an attack、 holding\\n  nothing back. His anger has taken\\n  over his mind、 and he's more\\n  determined than ever to bring his\\n  vengeful desires to pass-- and\\n  anyone who dares interfere will\\n  be struck down without mercy!\\n  Still、 despite this intensity、\\n  Adol proves the better swordsman、\\n  bringing Chester to his knees.\\n  McGuire sees this opening and\\n  takes it、 scrambling up the\\n  stairs to the castle roof for\\n  dear life. Chester、 realizing\\n  his target has fled、 picks\\n  himself up and runs to the roof\\n  as well. Adol has no choice but\\n  to follow.\\n\\n"
+
+TEXT RECORD #43
+record_offset = 0x589C
+length        = 0x2E0 (736)
+flags         = 0x7
+text_offset   = 0x58A8
+text_bytes    = 723
+raw_hex:
+2a 20 4f 6e 20 74 68 65 20 72 6f 6f 66 74 6f 70 81 41 20 43 68 65 73 74 65 72 20 66 69 6e 61 6c 6c 79 5c 6e 20 20 63 6f 72 6e 65 72 73 20 4d 63 47 75 69 72 65 81 41 20 64 69 73 61 6c 6c 6f 77 69 6e 67 20 61 6e 79 5c 6e 81 40 66 75 72 74 68 65 72 20 64 69 73 74 72 61 63 74 69 6f 6e 73 20 74 6f 20 74 68 65 5c 6e 81 40 66 75 6c 66 69 6c 6c 6d 65 6e 74 20 6f 66
+decoded:
+"* On the rooftop、 Chester finally\\n  corners McGuire、 disallowing any\\n\u3000further distractions to the\\n\u3000fulfillment of his vengeance.\\n\u3000Ignoring Adol、 he steadies his\\n\u3000sword for the kill when a voice\\n\u3000suddenly breaks the tension in\\n\u3000the air-- Elena's voice! Rushing\\n\u3000onto the scene、 Elena once again\\n\u3000tries to convince Chester to stop\\n\u3000what he's doing. At first、 her\\n\u3000words seem to have no effect; but\\n\u3000when she reveals that she now\\n\u3000remembers the events of her past、\\n\u3000Chester suddenly begins to\\n\u3000hesitate. Elena continues、\\n\u3000suggesting that perhaps what the\\n\u3000deceased of Genos Island truly\\n\u3000desire is not vengeance、 but\\n\u3000peace. It seems to be working--\\n\u3000Chester is backing down!\\n\\n"
+
+TEXT RECORD #44
+record_offset = 0x5B7C
+length        = 0x580 (1408)
+flags         = 0x8
+text_offset   = 0x5B88
+text_bytes    = 1392
+raw_hex:
+2a 20 53 75 64 64 65 6e 6c 79 81 41 20 61 6d 69 64 73 74 20 74 68 69 73 20 70 65 61 63 65 66 75 6c 5c 6e 81 40 72 65 73 6f 6c 75 74 69 6f 6e 20 74 6f 20 77 68 61 74 27 73 20 62 65 65 6e 20 61 20 6c 6f 6e 67 81 41 5c 6e 81 40 61 72 64 75 6f 75 73 20 6f 72 64 65 61 6c 81 41 20 74 68 65 20 65 61 72 74 68 20 62 65 67 69 6e 73 5c 6e 81 40 74 6f 20 73 68 61 6b 65
+decoded:
+"* Suddenly、 amidst this peaceful\\n\u3000resolution to what's been a long、\\n\u3000arduous ordeal、 the earth begins\\n\u3000to shake. Chester accuses McGuire\\n\u3000of foul play、 but the real\\n\u3000culprit seems to be...Bishop\\n\u3000Nikolas?! Appearing before the\\n\u3000crowd、 the heretical bishop\\n\u3000reveals that he is the mastermind\\n\u3000behind everything、 and his\\n\u3000fiendish scheme has reached its\\n\u3000final stages. Apparently、 he had\\n\u3000been using both the count and\\n\u3000Chester all this time、 preparing\\n\u3000to resurrect the one and only\\n\u3000true god （as far as he's\\n\u3000concerned）: Galbalan. Chester、\\n\u3000filled with renewed vitriol at\\n\u3000this revelation、 lunges at Bishop\\n\u3000Nikolas、 but is blocked by a\\n\u3000magic shield. In desperation、 he\\n\u3000draws the sword once wielded by\\n\u3000Genos and uses it to successfully\\n\u3000destroy Nikolas' shield-- but\\n\u3000when he runs in for the kill、\\n\u3000he's swatted away by Dularn、 who\\n\u3000unexpectedly appears in his path.\\n\u3000Adol then takes Chester's place、\\n\u3000but finds himself no match for\\n\u3000Nikolas' true power. With all\\n\u3000present helpless before him、\\n\u3000Nikolas reveals that he needs a\\n\u3000descendant of Genos to complete\\n\u3000the resurrection、 and begins to\\n\u3000leave with the unconscious\\n\u3000Chester in tow. Elena calls out、\\n\u3000however、 convincing him to take\\n\u3000her in Chester's place. And with\\n\u3000that、 Nikolas、 Dularn and Elena\\n\u3000all vanish from the scene...\\n\\n"
+
+TEXT RECORD #45
+record_offset = 0x6124
+length        = 0x220 (544)
+flags         = 0x0
+text_offset   = 0x6130
+text_bytes    = 528
+raw_hex:
+2a 20 41 64 6f 6c 20 62 72 69 6e 67 73 20 43 68 65 73 74 65 72 20 62 61 63 6b 20 74 6f 20 74 6f 77 6e 5c 6e 20 20 61 6e 64 20 69 6e 66 6f 72 6d 73 20 4d 61 79 6f 72 20 45 64 67 61 72 20 61 6e 64 5c 6e 20 20 46 61 74 68 65 72 20 50 69 65 72 72 65 20 6f 66 20 74 68 65 20 73 69 74 75 61 74 69 6f 6e 20 61 73 5c 6e 20 20 69 74 20 63 75 72 72 65 6e 74 6c 79 20 73
+decoded:
+'* Adol brings Chester back to town\\n  and informs Mayor Edgar and\\n  Father Pierre of the situation as\\n  it currently stands. Dumbfounded、\\n  the two of them begin to wallow\\n  in hopelessness and despair until\\n  Berhardt suddenly walks through\\n  the door. Immediately taking\\n  charge、 Berhardt agrees to help\\n  Mayor Edgar protect the town、 and\\n  advises Adol to head for Genos\\n  Island、 informing him that the\\n  small boat he and Dogi used to\\n  set sail for Felghana should be\\n  adequate to make the journey.\\n\\n'
+
+TEXT RECORD #46
+record_offset = 0x6344
+length        = 0x100 (256)
+flags         = 0x1
+text_offset   = 0x6350
+text_bytes    = 242
+raw_hex:
+2a 20 42 65 66 6f 72 65 20 6c 65 61 76 69 6e 67 20 66 6f 72 20 74 68 65 20 66 69 6e 61 6c 5c 6e 20 20 63 6f 6e 66 72 6f 6e 74 61 74 69 6f 6e 81 41 20 41 64 6f 6c 20 73 74 6f 70 73 20 69 6e 20 74 6f 5c 6e 20 20 73 65 65 20 43 68 65 73 74 65 72 81 41 20 77 68 6f 20 69 73 20 6e 6f 77 20 65 78 74 72 65 6d 65 6c 79 5c 6e 20 20 72 65 6d 6f 72 73 65 66 75 6c 20 66
+decoded:
+'* Before leaving for the final\\n  confrontation、 Adol stops in to\\n  see Chester、 who is now extremely\\n  remorseful for his actions.\\n  Chester gives Adol the Brave\\n  Sword once wielded by Genos、 and\\n  asks him to please save Elena.\\n\\n'
+
+TEXT RECORD #47
+record_offset = 0x6444
+length        = 0x1E0 (480)
+flags         = 0x2
+text_offset   = 0x6450
+text_bytes    = 467
+raw_hex:
+2a 20 41 64 6f 6c 20 6d 61 6b 65 73 20 74 68 65 20 73 68 6f 72 74 20 6a 6f 75 72 6e 65 79 20 74 6f 5c 6e 20 20 74 68 65 20 64 6f 63 6b 20 61 74 20 74 68 65 20 6f 74 68 65 72 20 65 6e 64 20 6f 66 5c 6e 20 20 46 65 6c 67 68 61 6e 61 81 41 20 77 68 65 72 65 75 70 6f 6e 20 68 65 20 65 6e 63 6f 75 6e 74 65 72 73 5c 6e 20 20 44 6f 67 69 2e 20 53 74 69 6c 6c 20 72
+decoded:
+"* Adol makes the short journey to\\n  the dock at the other end of\\n  Felghana、 whereupon he encounters\\n  Dogi. Still recovering from his\\n  wounds、 Dogi should be resting--\\n  but instead、 he's been waiting\\n  here for Adol、 quite insistent\\n  that Adol could never make the\\n  trip to Genos Island without his\\n  expert seafaring skills. Despite\\n  Adol's objections、 Dogi simply\\n  will not take no for an answer:\\n  He's coming along、 no matter\\n  what!\\n\\n"
+
+TEXT RECORD #48
+record_offset = 0x6624
+length        = 0x1D0 (464)
+flags         = 0x3
+text_offset   = 0x6630
+text_bytes    = 449
+raw_hex:
+2a 20 48 61 76 69 6e 67 20 73 61 66 65 6c 79 20 74 72 61 76 65 72 73 65 64 20 74 68 65 20 72 6f 75 67 68 5c 6e 20 20 77 61 74 65 72 73 20 6f 66 20 53 69 65 6e 6e 61 20 42 61 79 81 41 20 41 64 6f 6c 20 61 6e 64 5c 6e 20 20 44 6f 67 69 20 61 72 72 69 76 65 20 6f 6e 20 47 65 6e 6f 73 20 49 73 6c 61 6e 64 5c 6e 20 20 69 6e 74 61 63 74 2e 20 55 6e 66 6f 72 74 75
+decoded:
+"* Having safely traversed the rough\\n  waters of Sienna Bay、 Adol and\\n  Dogi arrive on Genos Island\\n  intact. Unfortunately、 Dogi's\\n  wounds get the better of him\\n  almost as soon as he steps off\\n  the boat. He falls unconscious、\\n  but not before telling Adol to go\\n  on without him. Adol moves his\\n  friend to a safe location、 then\\n  proceeds alone into the Dark\\n  Shrine behind the ruins of the\\n  island's once-thriving village.\\n\\n"
+
+TEXT RECORD #49
+record_offset = 0x67F4
+length        = 0x2E4 (740)
+flags         = 0x4
+text_offset   = 0x6800
+text_bytes    = 727
+raw_hex:
+2a 20 4a 75 73 74 20 62 65 66 6f 72 65 20 65 6e 74 65 72 69 6e 67 20 74 68 65 20 44 61 72 6b 5c 6e 20 20 53 68 72 69 6e 65 81 41 20 41 64 6f 6c 20 65 6e 63 6f 75 6e 74 65 72 73 20 61 6e 20 6f 6c 64 5c 6e 20 20 66 6f 65 3a 20 74 68 65 20 73 6f 72 63 65 72 65 72 81 41 20 44 75 6c 61 72 6e 2e 20 45 78 63 65 70 74 5c 6e 20 20 74 68 69 73 20 74 69 6d 65 81 41 20
+decoded:
+"* Just before entering the Dark\\n  Shrine、 Adol encounters an old\\n  foe: the sorcerer、 Dularn. Except\\n  this time、 she's come without her\\n  mask、 revealing herself to be\\n  none other than Sister Nell! The\\n  sister is unwilling to allow Adol\\n  to further disrupt the plans of\\n  her master and beloved、 Nikolas\\n  Garland、 and has decided that\\n  this will be their final confron-\\n  tation. She attacks with every\\n  skill at her disposal、 but Adol's\\n  mastery of combat puts her in her\\n  place. With her dying words、 she\\n  expresses regret for her many\\n  sins、 but also claims to finally\\n  feel a sense of peace. With that、\\n  her life slips away、 and Adol\\n  continues into the shrine\\n  unhindered.\\n\\n"
+
+TEXT RECORD #50
+record_offset = 0x6AD8
+length        = 0x1F8 (504)
+flags         = 0x5
+text_offset   = 0x6AE4
+text_bytes    = 491
+raw_hex:
+2a 20 41 66 74 65 72 20 6e 61 76 69 67 61 74 69 6e 67 20 74 68 65 20 6c 61 62 79 72 69 6e 74 68 20 6f 66 5c 6e 20 20 74 68 65 20 44 61 72 6b 20 53 68 72 69 6e 65 81 41 20 41 64 6f 6c 20 66 69 6e 61 6c 6c 79 5c 6e 20 20 63 6f 6d 65 73 20 66 61 63 65 2d 74 6f 2d 66 61 63 65 20 77 69 74 68 20 4e 69 6b 6f 6c 61 73 5c 6e 20 20 47 61 72 6c 61 6e 64 2e 20 47 61 72
+decoded:
+"* After navigating the labyrinth of\\n  the Dark Shrine、 Adol finally\\n  comes face-to-face with Nikolas\\n  Garland. Garland makes light of\\n  Sister Nell's death and rambles\\n  maniacally about the power and\\n  majesty of the one true god. He\\n  then fully unveils the demented\\n  body he created for himself at\\n  the Illburns Ruins、 and attacks\\n  Adol with every intent to kill.\\n\u3000Wielding the mighty Brave Sword、\\n\u3000however、 good triumphs over\\n\u3000evil、 and Garland is defeated.\\n\\n"
+
+TEXT RECORD #51
+record_offset = 0x6CD0
+length        = 0x2C0 (704)
+flags         = 0x6
+text_offset   = 0x6CDC
+text_bytes    = 690
+raw_hex:
+2a 20 41 64 6f 6c 20 70 72 6f 63 65 65 64 73 20 64 6f 77 6e 20 69 6e 74 6f 20 74 68 65 20 63 6f 72 65 5c 6e 81 40 6f 66 20 74 68 65 20 44 61 72 6b 20 53 68 72 69 6e 65 81 41 20 65 76 65 6e 74 75 61 6c 6c 79 5c 6e 81 40 66 69 6e 64 69 6e 67 20 74 68 65 20 72 69 74 75 61 6c 20 70 6c 61 74 66 6f 72 6d 20 75 70 6f 6e 5c 6e 81 40 77 68 69 63 68 20 45 6c 65 6e 61
+decoded:
+"* Adol proceeds down into the core\\n\u3000of the Dark Shrine、 eventually\\n\u3000finding the ritual platform upon\\n\u3000which Elena is bound. Elena's\\n\u3000life force seems to be feeding\\n\u3000into Galbalan's body、 ultimately\\n\u3000causing it to awaken. As soon as\\n\u3000it opens its eyes、 it notices the\\n\u3000sword in Adol's hand、 and makes\\n\u3000its hatred of Genos known with an\\n\u3000ominous、 booming voice. It then\\n\u3000begins describing its evil\\n\u3000ambitions until Chester suddenly\\n\u3000leaps onto the scene、 freeing\\n\u3000Elena from her bindings with a\\n\u3000single slash. Taking the chance\\n\u3000Chester has granted him、 Adol\\n\u3000jumps into action、 fighting the\\n\u3000hideous creature head-on...and\\n\u3000actually winning!\\n\\n"
+
+TEXT RECORD #52
+record_offset = 0x6F90
+length        = 0x120 (288)
+flags         = 0x7
+text_offset   = 0x6F9C
+text_bytes    = 273
+raw_hex:
+20 42 75 74 20 74 68 65 20 62 61 74 74 6c 65 5c 6e 81 40 69 73 6e 27 74 20 6f 76 65 72 2d 2d 20 47 61 6c 62 61 6c 61 6e 20 68 61 73 20 62 65 65 6e 5c 6e 81 40 74 65 6d 70 6f 72 61 72 69 6c 79 20 69 6e 63 61 70 61 63 69 74 61 74 65 64 81 41 20 62 75 74 5c 6e 81 40 69 74 73 20 72 65 73 75 72 72 65 63 74 69 6f 6e 20 69 73 20 73 74 69 6c 6c 20 73 6c 6f 77 6c 79
+decoded:
+" But the battle\\n\u3000isn't over-- Galbalan has been\\n\u3000temporarily incapacitated、 but\\n\u3000its resurrection is still slowly\\n\u3000continuing. Chester seems to have\\n\u3000an idea、 however、 and leads Adol\\n\u3000and Elena to the exit plate、\\n\u3000insisting they leave ahead of\\n\u3000him.\\n\\n"
+
+TEXT RECORD #53
+record_offset = 0x70B0
+length        = 0x1F0 (496)
+flags         = 0x8
+text_offset   = 0x70BC
+text_bytes    = 482
+raw_hex:
+2a 20 48 69 73 20 70 6c 61 6e 3f 20 48 65 20 69 6e 74 65 6e 64 73 20 74 6f 20 73 61 63 72 69 66 69 63 65 5c 6e 81 40 68 69 6d 73 65 6c 66 20 74 6f 20 62 6c 6f 77 20 75 70 20 74 68 65 20 65 6e 74 69 72 65 5c 6e 81 40 69 73 6c 61 6e 64 81 41 20 74 61 6b 69 6e 67 20 47 61 6c 62 61 6c 61 6e 20 77 69 74 68 20 69 74 2e 5c 6e 81 40 45 6c 65 6e 61 20 64 69 73 61 67
+decoded:
+"* His plan? He intends to sacrifice\\n\u3000himself to blow up the entire\\n\u3000island、 taking Galbalan with it.\\n\u3000Elena disagrees with this course\\n\u3000of action、 insisting that there\\n\u3000must be another way. She refuses\\n\u3000to allow Chester to go through\\n\u3000with it-- so Chester punches her\\n\u3000in just the right spot to knock\\n\u3000her out、 then clumsily hands her\\n\u3000unconscious body to Adol. He asks\\n\u3000Adol to please get her to safety、\\n\u3000and watch over her after he's\\n\u3000departed...\\n\\n"
+
+TEXT RECORD #54
+record_offset = 0x72C4
+length        = 0x154 (340)
+flags         = 0x0
+text_offset   = 0x72D0
+text_bytes    = 327
+raw_hex:
+2a 20 47 65 6e 6f 73 20 49 73 6c 61 6e 64 20 69 73 20 67 6f 6e 65 2d 2d 20 61 6e 64 20 77 69 74 68 5c 6e 20 20 69 74 81 41 20 74 68 65 20 63 75 72 73 65 20 74 68 61 74 27 73 20 6c 69 6e 67 65 72 65 64 20 69 6e 5c 6e 20 20 46 65 6c 67 68 61 6e 61 20 66 6f 72 20 67 65 6e 65 72 61 74 69 6f 6e 73 20 68 61 73 20 62 65 65 6e 5c 6e 20 20 6c 69 66 74 65 64 2e 20 4e
+decoded:
+"* Genos Island is gone-- and with\\n  it、 the curse that's lingered in\\n  Felghana for generations has been\\n  lifted. Now that all the land is\\n  safe and the townsfolk are free\\n  to rebuild、 Adol wishes only to\\n  slip away into the sunrise、\\n  setting sail for another new\\n  adventure in some distant\\n  countryside.\\n\\n"
+
+TEXT RECORD #55
+record_offset = 0x7418
+length        = 0x1F0 (496)
+flags         = 0x1
+text_offset   = 0x7424
+text_bytes    = 482
+raw_hex:
+2a 20 48 69 73 20 6f 6e 6c 79 20 72 65 67 72 65 74 20 69 73 20 74 68 61 74 20 45 6c 65 6e 61 5c 6e 20 20 77 6f 6e 27 74 20 63 6f 6d 65 20 74 6f 20 74 68 65 20 64 6f 6f 72 20 74 6f 20 73 61 79 5c 6e 81 40 67 6f 6f 64 62 79 65 81 41 20 61 73 20 73 68 65 27 73 20 66 61 72 20 74 6f 6f 20 6c 6f 73 74 5c 6e 81 40 69 6e 20 67 72 69 65 66 20 61 6e 64 20 64 65 73 70
+decoded:
+"* His only regret is that Elena\\n  won't come to the door to say\\n\u3000goodbye、 as she's far too lost\\n\u3000in grief and despair from the\\n\u3000passing of her dear brother.\\n\u3000Adol's only comfort to this end\\n\u3000comes from Dogi's assurance that\\n\u3000one day、 he and Elena will meet\\n\u3000again-- and on that day、 Elena\\n\u3000will surely greet him with a\\n\u3000smile. Holding that image in his\\n\u3000heart、 Adol takes his first step\\n\u3000toward whatever new frontier may\\n\u3000await beyond the horizon...\\n\\n"
+
+Detected text records: 55
+====================================================================================================
+FILE: ys_romfs/data/scn/s_0001.bin
+SIZE: 28472
+
+Detected text records: 0
+====================================================================================================
+FILE: ys_romfs/data/scn/s_0100.bin
+SIZE: 62452
+
+Detected text records: 0
+====================================================================================================
+FILE: ys_romfs/data/scn/s_0101.bin
+SIZE: 4488
+
+Detected text records: 0
+====================================================================================================
+FILE: ys_romfs/data/scn/s_0102.bin
+SIZE: 2872
+
+Detected text records: 0
+====================================================================================================
+FILE: ys_romfs/data/scn/s_0103.bin
+SIZE: 3264
+
+Detected text records: 0
+====================================================================================================
+FILE: ys_romfs/data/scn/s_0110.bin
+SIZE: 48040
+
+Detected text records: 0
+====================================================================================================
+FILE: ys_romfs/data/scn/s_0120.bin
+SIZE: 49836
+
+Detected text records: 0
+====================================================================================================
+FILE: ys_romfs/data/scn/s_0121.bin
+SIZE: 4672
+
+Detected text records: 0
+====================================================================================================
+FILE: ys_romfs/data/scn/s_0122.bin
+SIZE: 2160
+
+Detected text records: 0
