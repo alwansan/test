@@ -1,0 +1,152 @@
+====================================================================================================
+FILE: ys_romfs/data/scn/s_0000.bin
+SIZE: 30228
+
+BEST_CHAIN_LENGTH: 10
+START_OFFSET: 0x1740
+
+#00 offset=0x1740 size=0x18 next=0x1758
+    sample='Into the Quarry\x00\x1b\x01\x02\x00'
+#01 offset=0x1758 size=0x168 next=0x18C0
+    sample="\x00\x00\x00\x00* Gardner wishes he could go rescue\\n  the mayor and Dewey�A but he's\\n  nee"
+#02 offset=0x18C0 size=0xE8 next=0x19A8
+    sample='\x01\x00\x00\x00* Upon arrival at the Tigray\\n  Quarry�A Adol is greeted by a\\n  miner named'
+#03 offset=0x19A8 size=0x140 next=0x1AE8
+    sample='\x02\x00\x00\x00* Adol finds Dewey�A and learns that\\n  Edgar is farther in-- but the\\n  min'
+#04 offset=0x1AE8 size=0x170 next=0x1C58
+    sample='\x03\x00\x00\x00* Adol enters the storehouse and\\n  is almost immediately accosted by\\n  a m'
+#05 offset=0x1C58 size=0x108 next=0x1D60
+    sample='\x04\x00\x00\x00* In the back of the storehouse�A\\n  Adol finds a beautiful�A old-\\n  fashio'
+#06 offset=0x1D60 size=0x1A8 next=0x1F08
+    sample='\x05\x00\x00\x00* Finally�A in the very deepest part\\n  of the mine�A Adol finds Mayor\\n  Ed'
+#07 offset=0x1F08 size=0x1F0 next=0x20F8
+    sample='\x06\x00\x00\x00* At the back of the ruins�A Adol\\n  sees a large statue. Upon going\\n  in f'
+#08 offset=0x20F8 size=0x13C next=0x2234
+    sample="\x07\x00\x00\x00* After the battle�A Adol exits the\\n�@ruins only to find Elena's\\n�@estrang"
+#09 offset=0x2234 size=0x14C next=0x2380
+    sample='\x08\x00\x00\x00* Adol escorts Mayor Edgar and\\n�@Dewey safely back to Redmont�A\\n�@then dro'
+
+====================================================================================================
+FILE: ys_romfs/data/scn/s_0001.bin
+SIZE: 28472
+
+NO_CHAIN_FOUND
+
+====================================================================================================
+FILE: ys_romfs/data/scn/s_0100.bin
+SIZE: 62452
+
+NO_CHAIN_FOUND
+
+====================================================================================================
+FILE: ys_romfs/data/scn/s_0101.bin
+SIZE: 4488
+
+NO_CHAIN_FOUND
+
+====================================================================================================
+FILE: ys_romfs/data/scn/s_0102.bin
+SIZE: 2872
+
+NO_CHAIN_FOUND
+
+====================================================================================================
+FILE: ys_romfs/data/scn/s_0103.bin
+SIZE: 3264
+
+NO_CHAIN_FOUND
+
+====================================================================================================
+FILE: ys_romfs/data/scn/s_0110.bin
+SIZE: 48040
+
+BEST_CHAIN_LENGTH: 4
+START_OFFSET: 0x4B34
+
+#00 offset=0x4B34 size=0x1C next=0x4B50
+    sample='What will you do?\\p\x00i\x00\x01\x00'
+#01 offset=0x4B50 size=0x10 next=0x4B60
+    sample='SelTalk\x00i\x00\x01\x00'
+#02 offset=0x4B60 size=0x10 next=0x4B70
+    sample='SelShop\x00i\x00\x01\x00'
+#03 offset=0x4B70 size=0x18 next=0x4B88
+    sample='MakingShield\x00\x00\x00\x00i\x00\x01\x00'
+
+====================================================================================================
+FILE: ys_romfs/data/scn/s_0120.bin
+SIZE: 49836
+
+NO_CHAIN_FOUND
+
+====================================================================================================
+FILE: ys_romfs/data/scn/s_0121.bin
+SIZE: 4672
+
+NO_CHAIN_FOUND
+
+====================================================================================================
+FILE: ys_romfs/data/scn/s_0122.bin
+SIZE: 2160
+
+NO_CHAIN_FOUND
+
+====================================================================================================
+FILE: ys_romfs/data/scn/s_0130.bin
+SIZE: 20632
+
+NO_CHAIN_FOUND
+
+====================================================================================================
+FILE: ys_romfs/data/scn/s_0140.bin
+SIZE: 9984
+
+NO_CHAIN_FOUND
+
+====================================================================================================
+FILE: ys_romfs/data/scn/s_0150.bin
+SIZE: 62076
+
+NO_CHAIN_FOUND
+
+====================================================================================================
+FILE: ys_romfs/data/scn/s_0160.bin
+SIZE: 11932
+
+NO_CHAIN_FOUND
+
+====================================================================================================
+FILE: ys_romfs/data/scn/s_0170.bin
+SIZE: 18632
+
+NO_CHAIN_FOUND
+
+====================================================================================================
+FILE: ys_romfs/data/scn/s_0180.bin
+SIZE: 17632
+
+NO_CHAIN_FOUND
+
+====================================================================================================
+FILE: ys_romfs/data/scn/s_0200.bin
+SIZE: 143364
+
+NO_CHAIN_FOUND
+
+====================================================================================================
+FILE: ys_romfs/data/scn/s_0201.bin
+SIZE: 6268
+
+NO_CHAIN_FOUND
+
+====================================================================================================
+FILE: ys_romfs/data/scn/s_1000.bin
+SIZE: 37052
+
+NO_CHAIN_FOUND
+
+====================================================================================================
+FILE: ys_romfs/data/scn/s_1001.bin
+SIZE: 9524
+
+NO_CHAIN_FOUND
+
