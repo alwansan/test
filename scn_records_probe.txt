@@ -1,0 +1,450 @@
+========================================================================================================================
+FILE: ys_romfs/data/scn/s_0000.bin
+SIZE: 30228
+
+OFFSET       : 0x4
+LENGTH       : 13 (0xD)
+HEADER[0:16] : 0d 00 00 00 74 72 61 6e 73 66 65 72 00 00 00 00
+DATA SAMPLE  : 'sfer\x00'
+
+OFFSET       : 0x27C
+LENGTH       : 56 (0x38)
+HEADER[0:16] : 38 00 00 00 73 5f 30 30 30 30 2e 6f 70 64 00 00
+DATA SAMPLE  : '00.opd\x00\x00s_0000.fog\x00\x00s_0000.ca2\x00\x00s_0000.chr\x00\x00�\x03\x01\x00'
+
+OFFSET       : 0x3CC
+LENGTH       : 144 (0x90)
+HEADER[0:16] : 90 00 00 00 00 00 00 00 00 00 00 00 30 00 00 00
+DATA SAMPLE  : '\x00\x00\x00\x000\x00\x00\x00<color:0xffacffdf>The energy pulse within the surrounding\\nearth is unstable  rendering the Wing\\nTalisman ineffective.\\p\x00\x00\x00P\x00\x00\x00'
+
+OFFSET       : 0x3D8
+LENGTH       : 48 (0x30)
+HEADER[0:16] : 30 00 00 00 3c 63 6f 6c 6f 72 3a 30 78 66 66 61
+DATA SAMPLE  : 'or:0xffacffdf>The energy pulse within th'
+
+OFFSET       : 0x510
+LENGTH       : 72 (0x48)
+HEADER[0:16] : 48 00 00 00 00 00 00 00 00 00 00 00 30 00 00 00
+DATA SAMPLE  : "\x00\x00\x00\x000\x00\x00\x00<color:0xffacffdf>You mustn't leave Elena behind!\\p\x00�\x03\x01\x00"
+
+OFFSET       : 0x51C
+LENGTH       : 48 (0x30)
+HEADER[0:16] : 30 00 00 00 3c 63 6f 6c 6f 72 3a 30 78 66 66 61
+DATA SAMPLE  : "or:0xffacffdf>You mustn't leave Elena be"
+
+OFFSET       : 0x580
+LENGTH       : 76 (0x4C)
+HEADER[0:16] : 4c 00 00 00 00 00 00 00 00 00 00 00 30 00 00 00
+DATA SAMPLE  : "\x00\x00\x00\x000\x00\x00\x00<color:0xffacffdf>You mustn't leave the boy behind!\\p\x00\x00\x00�\x03\x01\x00"
+
+OFFSET       : 0x58C
+LENGTH       : 48 (0x30)
+HEADER[0:16] : 30 00 00 00 3c 63 6f 6c 6f 72 3a 30 78 66 66 61
+DATA SAMPLE  : "or:0xffacffdf>You mustn't leave the boy "
+
+OFFSET       : 0x664
+LENGTH       : 96 (0x60)
+HEADER[0:16] : 60 00 00 00 00 00 00 00 00 00 00 00 30 00 00 00
+DATA SAMPLE  : '\x00\x00\x00\x000\x00\x00\x00<color:0xffacffdf>You must wait until the lady of the\\ncastle arrives.\\p\x00\x00\x00\x00P\x00\x00\x00'
+
+OFFSET       : 0x670
+LENGTH       : 48 (0x30)
+HEADER[0:16] : 30 00 00 00 3c 63 6f 6c 6f 72 3a 30 78 66 66 61
+DATA SAMPLE  : 'or:0xffacffdf>You must wait until the la'
+
+OFFSET       : 0x750
+LENGTH       : 96 (0x60)
+HEADER[0:16] : 60 00 00 00 00 00 00 00 00 00 00 00 30 00 00 00
+DATA SAMPLE  : "\x00\x00\x00\x000\x00\x00\x00<color:0xffacffdf>Elena and Anya are in danger.\\nThey mustn't be ignored!\\p\x00P\x00\x00\x00"
+
+OFFSET       : 0x75C
+LENGTH       : 48 (0x30)
+HEADER[0:16] : 30 00 00 00 3c 63 6f 6c 6f 72 3a 30 78 66 66 61
+DATA SAMPLE  : 'or:0xffacffdf>Elena and Anya are in dang'
+
+OFFSET       : 0x83C
+LENGTH       : 124 (0x7C)
+HEADER[0:16] : 7c 00 00 00 00 00 00 00 00 00 00 00 30 00 00 00
+DATA SAMPLE  : '\x00\x00\x00\x000\x00\x00\x00<color:0xffacffdf>The power within your surroundings\\nprevents the Wing Talisman from\\nfunctioning.\\p\x00\x00\x00P\x00\x00\x00'
+
+OFFSET       : 0x848
+LENGTH       : 48 (0x30)
+HEADER[0:16] : 30 00 00 00 3c 63 6f 6c 6f 72 3a 30 78 66 66 61
+DATA SAMPLE  : 'or:0xffacffdf>The power within your surr'
+
+OFFSET       : 0xB50
+LENGTH       : 100 (0x64)
+HEADER[0:16] : 64 00 00 00 00 00 00 00 00 00 00 00 30 00 00 00
+DATA SAMPLE  : '\x00\x00\x00\x000\x00\x00\x00<color:0xffacffdf>Adol drank the faintly shimmering water\\nfrom the bottle.\\p\x00\x00\x00P\x00\x00\x00'
+
+OFFSET       : 0xB5C
+LENGTH       : 48 (0x30)
+HEADER[0:16] : 30 00 00 00 3c 63 6f 6c 6f 72 3a 30 78 66 66 61
+DATA SAMPLE  : 'or:0xffacffdf>Adol drank the faintly shi'
+
+OFFSET       : 0xC50
+LENGTH       : 120 (0x78)
+HEADER[0:16] : 78 00 00 00 00 00 00 00 00 00 00 00 30 00 00 00
+DATA SAMPLE  : '\x00\x00\x00\x000\x00\x00\x00<color:0xffacffdf>A power welled up from within his body�A\\ngranting him the �mDash�n ability!\\p\x00\x00\x00\x00P\x00\x00\x00'
+
+OFFSET       : 0xC5C
+LENGTH       : 48 (0x30)
+HEADER[0:16] : 30 00 00 00 3c 63 6f 6c 6f 72 3a 30 78 66 66 61
+DATA SAMPLE  : 'or:0xffacffdf>A power welled up from wit'
+
+OFFSET       : 0xE6C
+LENGTH       : 68 (0x44)
+HEADER[0:16] : 44 00 00 00 00 00 00 00 00 00 00 00 30 00 00 00
+DATA SAMPLE  : '\x00\x00\x00\x000\x00\x00\x00<color:0xffacffdf>That cannot be used here.\\p\x00\x00\x00P\x00\x00\x00'
+
+OFFSET       : 0xE78
+LENGTH       : 48 (0x30)
+HEADER[0:16] : 30 00 00 00 3c 63 6f 6c 6f 72 3a 30 78 66 66 61
+DATA SAMPLE  : 'or:0xffacffdf>That cannot be used here.\\'
+
+OFFSET       : 0xECC
+LENGTH       : 28 (0x1C)
+HEADER[0:16] : 1c 00 00 00 41 72 72 69 76 61 6c 20 69 6e 20 46
+DATA SAMPLE  : 'val in Felghana\x00\x1b\x01\x02\x00'
+
+OFFSET       : 0xEE8
+LENGTH       : 120 (0x78)
+HEADER[0:16] : 78 00 00 00 00 00 00 00 2a 20 41 66 74 65 72 20
+DATA SAMPLE  : "* After a long journey�A Adol and\\n  Dogi finally arrive in Dogi's\\n  birthplace: the land of Felghana.\\n\\n\x00\x1b\x01\x02\x00"
+
+OFFSET       : 0xF60
+LENGTH       : 244 (0xF4)
+HEADER[0:16] : f4 00 00 00 01 00 00 00 2a 20 4f 6e 20 74 68 65
+DATA SAMPLE  : "* On their way to the town of\\n  Redmont�A they encounter a girl\\n  who's been cornered by monsters.\\n  Adol saves her from her fate�A\\n  and learns that she's actually\\n  a childh"
+
+OFFSET       : 0x104C
+LENGTH       : 110 (0x6E)
+HEADER[0:16] : 6e 00 00 00 1b 01 02 00 d4 00 00 00 02 00 00 00
+DATA SAMPLE  : '�\x00\x00\x00\x02\x00\x00\x00* As Adol�A Dogi and Elena reach the\\n  town of Redmont�A they are greeted\\n  by the gatekeepe'
+
+OFFSET       : 0x1054
+LENGTH       : 212 (0xD4)
+HEADER[0:16] : d4 00 00 00 02 00 00 00 2a 20 41 73 20 41 64 6f
+DATA SAMPLE  : '* As Adol�A Dogi and Elena reach the\\n  town of Redmont�A they are greeted\\n  by the gatekeeper�A Gardner.\\n  According to him�A monsters began\\n  showing up in Felghana around one'
+
+OFFSET       : 0x1120
+LENGTH       : 110 (0x6E)
+HEADER[0:16] : 6e 00 00 00 1b 01 02 00 00 01 00 00 03 00 00 00
+DATA SAMPLE  : '\x00\x01\x00\x00\x03\x00\x00\x00* Upon entering the town�A Dogi\\n  heads right for the inn where he\\n  lived and worked as a c'
+
+OFFSET       : 0x1128
+LENGTH       : 256 (0x100)
+HEADER[0:16] : 00 01 00 00 03 00 00 00 2a 20 55 70 6f 6e 20 65
+DATA SAMPLE  : '* Upon entering the town�A Dogi\\n  heads right for the inn where he\\n  lived and worked as a child.\\n  There�A Elena takes her leave. As\\n  they enter the inn�A they are\\n  greeted'
+
+OFFSET       : 0x1228
+LENGTH       : 392 (0x188)
+HEADER[0:16] : 88 01 00 00 04 00 00 00 2a 20 54 68 65 20 6e 65
+DATA SAMPLE  : '* The next morning�A Dogi tells Adol\\n  that he plans to go see his old\\n  master in the Elderm Mountains--\\n  the man who taught him everything\\n  he knows about combat. Dogi\\n  b'
+
+OFFSET       : 0x13B0
+LENGTH       : 336 (0x150)
+HEADER[0:16] : 50 01 00 00 05 00 00 00 2a 20 41 64 6f 6c 20 76
+DATA SAMPLE  : "* Adol visits Elena's house�A where\\n  he learns that her brother�A\\n  Chester-- another old friend of\\n  Dogi's-- left town over six\\n  months ago and has yet to return.\\n  She wa"
+
+OFFSET       : 0x1500
+LENGTH       : 248 (0xF8)
+HEADER[0:16] : f8 00 00 00 06 00 00 00 2a 20 41 73 20 41 64 6f
+DATA SAMPLE  : '* As Adol continues his walk\\n  through town�A he overhears loud�A\\n  panicked voices. The voices\\n  belong to Gardner and a man who\\n  looks to be a laborer. It seems\\n  the labor'
+
+OFFSET       : 0x15F8
+LENGTH       : 316 (0x13C)
+HEADER[0:16] : 3c 01 00 00 07 00 00 00 2a 20 48 69 73 20 6e 61
+DATA SAMPLE  : "* His name is Ricardo�A and he works\\n�@at the Tigray Quarry. According\\n�@to him�A monsters suddenly poured\\n�@from the mines en masse. Worse\\n�@still�A Redmont's mayor�A Edgar�A\\"
+
+OFFSET       : 0x1758
+LENGTH       : 360 (0x168)
+HEADER[0:16] : 68 01 00 00 00 00 00 00 2a 20 47 61 72 64 6e 65
+DATA SAMPLE  : "* Gardner wishes he could go rescue\\n  the mayor and Dewey�A but he's\\n  needed in town�A since no one else\\n  in all of Redmont has the skills\\n  or training to keep everyone\\n  s"
+
+OFFSET       : 0x18B8
+LENGTH       : 110 (0x6E)
+HEADER[0:16] : 6e 00 00 00 1b 01 02 00 e8 00 00 00 01 00 00 00
+DATA SAMPLE  : '�\x00\x00\x00\x01\x00\x00\x00* Upon arrival at the Tigray\\n  Quarry�A Adol is greeted by a\\n  miner named Paul. Seems Mayor'
+
+OFFSET       : 0x18C0
+LENGTH       : 232 (0xE8)
+HEADER[0:16] : e8 00 00 00 01 00 00 00 2a 20 55 70 6f 6e 20 61
+DATA SAMPLE  : '* Upon arrival at the Tigray\\n  Quarry�A Adol is greeted by a\\n  miner named Paul. Seems Mayor\\n  Edgar is stuck pretty deep\\n  inside�A so Dewey went in after\\n  him�A leaving Pau'
+
+OFFSET       : 0x19A8
+LENGTH       : 320 (0x140)
+HEADER[0:16] : 40 01 00 00 02 00 00 00 2a 20 41 64 6f 6c 20 66
+DATA SAMPLE  : '* Adol finds Dewey�A and learns that\\n  Edgar is farther in-- but the\\n  mine ahead is infested with\\n  monsters invulnerable to physical\\n  attacks�A making it virtually\\n  impass'
+
+OFFSET       : 0x1AE8
+LENGTH       : 368 (0x170)
+HEADER[0:16] : 70 01 00 00 03 00 00 00 2a 20 41 64 6f 6c 20 65
+DATA SAMPLE  : '* Adol enters the storehouse and\\n  is almost immediately accosted by\\n  a mysterious voice from behind.\\n  The voice belongs to a shadowy\\n  sorcerer named Dularn�A who\\n  appears'
+
+OFFSET       : 0x1C50
+LENGTH       : 110 (0x6E)
+HEADER[0:16] : 6e 00 00 00 1b 01 02 00 08 01 00 00 04 00 00 00
+DATA SAMPLE  : '\x08\x01\x00\x00\x04\x00\x00\x00* In the back of the storehouse�A\\n  Adol finds a beautiful�A old-\\n  fashioned bracelet with '
+
+OFFSET       : 0x1C58
+LENGTH       : 264 (0x108)
+HEADER[0:16] : 08 01 00 00 04 00 00 00 2a 20 49 6e 20 74 68 65
+DATA SAMPLE  : '* In the back of the storehouse�A\\n  Adol finds a beautiful�A old-\\n  fashioned bracelet with a ruby\\n  setting. As if guided by unseen\\n  hands�A he places the bracelet on\\n  his '
+
+OFFSET       : 0x1D58
+LENGTH       : 110 (0x6E)
+HEADER[0:16] : 6e 00 00 00 1b 01 02 00 a8 01 00 00 05 00 00 00
+DATA SAMPLE  : '�\x01\x00\x00\x05\x00\x00\x00* Finally�A in the very deepest part\\n  of the mine�A Adol finds Mayor\\n  Edgar. Though safe�A'
+
+OFFSET       : 0x1D60
+LENGTH       : 424 (0x1A8)
+HEADER[0:16] : a8 01 00 00 05 00 00 00 2a 20 46 69 6e 61 6c 6c
+DATA SAMPLE  : '* Finally�A in the very deepest part\\n  of the mine�A Adol finds Mayor\\n  Edgar. Though safe�A the mayor\\n  hurt his leg fleeing from\\n  monsters�A and is thus unable to\\n  get out'
+
+OFFSET       : 0x1F08
+LENGTH       : 496 (0x1F0)
+HEADER[0:16] : f0 01 00 00 06 00 00 00 2a 20 41 74 20 74 68 65
+DATA SAMPLE  : '* At the back of the ruins�A Adol\\n  sees a large statue. Upon going\\n  in for a closer look�A the statue\\n  comes to life with a brilliant\\n  flash of light�A taking on the\\n  for'
+
+OFFSET       : 0x20F8
+LENGTH       : 316 (0x13C)
+HEADER[0:16] : 3c 01 00 00 07 00 00 00 2a 20 41 66 74 65 72 20
+DATA SAMPLE  : "* After the battle�A Adol exits the\\n�@ruins only to find Elena's\\n�@estranged brother�A Chester�A\\n�@accosting Mayor Edgar. Chester\\n�@introduces himself as a knight in\\n�@service"
+
+OFFSET       : 0x222C
+LENGTH       : 110 (0x6E)
+HEADER[0:16] : 6e 00 00 00 1b 01 02 00 4c 01 00 00 08 00 00 00
+DATA SAMPLE  : "L\x01\x00\x00\x08\x00\x00\x00* Adol escorts Mayor Edgar and\\n�@Dewey safely back to Redmont�A\\n�@then drops by the mayor's "
+
+OFFSET       : 0x2234
+LENGTH       : 332 (0x14C)
+HEADER[0:16] : 4c 01 00 00 08 00 00 00 2a 20 41 64 6f 6c 20 65
+DATA SAMPLE  : "* Adol escorts Mayor Edgar and\\n�@Dewey safely back to Redmont�A\\n�@then drops by the mayor's house\\n�@to ascertain exactly what's\\n�@happening. Mayor Edgar laments\\n�@the man Ches"
+
+OFFSET       : 0x23A8
+LENGTH       : 476 (0x1DC)
+HEADER[0:16] : dc 01 00 00 00 00 00 00 2a 20 41 64 6f 6c 20 73
+DATA SAMPLE  : '* Adol swings by the church and\\n  learns from Bishop Nikolas and\\n  Sister Nell that Father Pierre\\n  has gone off by himself to an\\n  old pagan temple known as the\\n  Illburns Ru'
+
+OFFSET       : 0x2584
+LENGTH       : 624 (0x270)
+HEADER[0:16] : 70 02 00 00 01 00 00 00 2a 20 41 73 20 41 64 6f
+DATA SAMPLE  : '* As Adol pushes forward into the\\n  ruins�A he hears the voice of\\n  Father Pierre�A and witnesses him\\n  engaged in a heated discussion\\n  with Chester. After a few moments\\n  Ch'
+
+OFFSET       : 0x27F4
+LENGTH       : 324 (0x144)
+HEADER[0:16] : 44 01 00 00 02 00 00 00 2a 20 41 64 6f 6c 20 73
+DATA SAMPLE  : '* Adol survives the fall with only\\n  a few cuts and scratches �ilucky\\n  for him�A he landed on a travel\\n  monument!�j and picks himself up�A\\n  only to become acutely aware of\\n'
+
+OFFSET       : 0x2938
+LENGTH       : 416 (0x1A0)
+HEADER[0:16] : a0 01 00 00 03 00 00 00 2a 20 49 6e 20 74 68 65
+DATA SAMPLE  : '* In the depths of the lava pit�A\\n  Adol finds another ancient-\\n  looking bracelet�A this time with\\n  an emerald setting. When he\\n  places it on his wrist�A he feels\\n  an enti'
+
+OFFSET       : 0x2AD8
+LENGTH       : 292 (0x124)
+HEADER[0:16] : 24 01 00 00 04 00 00 00 2a 20 41 64 6f 6c 20 64
+DATA SAMPLE  : '* Adol doubles back after acquiring\\n�@this bracelet�A only to be\\n�@attacked from behind by a vicious\\n�@firewyrm. The battle gets quite\\n�@heated �iboth literally and\\n�@figurati'
+
+OFFSET       : 0x2BFC
+LENGTH       : 316 (0x13C)
+HEADER[0:16] : 3c 01 00 00 05 00 00 00 2a 20 41 64 6f 6c 20 65
+DATA SAMPLE  : "* Adol enters a wide�A open cavern\\n�@that seems to suggest he's\\n�@closing in on the exit to this\\n�@fiery maze. He rushes forward�A\\n�@only to find himself confronted\\n�@by a mas"
+
+OFFSET       : 0x2D38
+LENGTH       : 692 (0x2B4)
+HEADER[0:16] : b4 02 00 00 06 00 00 00 2a 20 53 75 63 63 65 73
+DATA SAMPLE  : '* Successfully escaping the Zone of\\n�@Lava�A Adol finds Chester lying in\\n�@wait for him. Chester demands\\n�@Adol hand over the two statues�A\\n�@and is clearly willing to bring\\n�'
+
+OFFSET       : 0x3014
+LENGTH       : 952 (0x3B8)
+HEADER[0:16] : b8 03 00 00 00 00 00 00 2a 20 41 64 6f 6c 20 6f
+DATA SAMPLE  : "* Adol once again returns to the\\n  mayor's house to sort out what\\n  exactly is happening. So far�A\\n  all anyone knows is that Count\\n  McGuire is seeking statues�A and\\n  using "
+
+OFFSET       : 0x33C4
+LENGTH       : 110 (0x6E)
+HEADER[0:16] : 6e 00 00 00 1b 01 02 00 78 02 00 00 01 00 00 00
+DATA SAMPLE  : 'x\x02\x00\x00\x01\x00\x00\x00* In no time at all�A Adol discovers\\n  the fresco. He reaches out to\\n  touch it�A and sudden'
+
+OFFSET       : 0x33CC
+LENGTH       : 632 (0x278)
+HEADER[0:16] : 78 02 00 00 01 00 00 00 2a 20 49 6e 20 6e 6f 20
+DATA SAMPLE  : '* In no time at all�A Adol discovers\\n  the fresco. He reaches out to\\n  touch it�A and suddenly hears a\\n  voice speak to him from within.\\n  The voice belongs to an ancient\\n  wa'
+
+OFFSET       : 0x363C
+LENGTH       : 110 (0x6E)
+HEADER[0:16] : 6e 00 00 00 1b 01 02 00 c8 01 00 00 02 00 00 00
+DATA SAMPLE  : '�\x01\x00\x00\x02\x00\x00\x00* Within the deepest chamber of the\\n�@abandoned mine�A Adol discovers a\\n�@crystal that moves'
+
+OFFSET       : 0x3644
+LENGTH       : 456 (0x1C8)
+HEADER[0:16] : c8 01 00 00 02 00 00 00 2a 20 57 69 74 68 69 6e
+DATA SAMPLE  : '* Within the deepest chamber of the\\n�@abandoned mine�A Adol discovers a\\n�@crystal that moves as if alive.\\n�@On closer inspection�A he learns\\n�@that it actually is! The ground\\n'
+
+OFFSET       : 0x3834
+LENGTH       : 916 (0x394)
+HEADER[0:16] : 94 03 00 00 00 00 00 00 2a 20 41 64 6f 6c 20 72
+DATA SAMPLE  : "* Adol returns to the mayor's house\\n  with his newly-unearthed statue\\n  and finds Father Pierre there�A\\n  safe and sound. After all parties\\n  are filled in on the events that\\n"
+
+OFFSET       : 0x3BC8
+LENGTH       : 320 (0x140)
+HEADER[0:16] : 40 01 00 00 01 00 00 00 2a 20 41 64 6f 6c 27 73
+DATA SAMPLE  : "* Adol's climb up the mountainside\\n  is interrupted by another random\\n  appearance by the sorcerer�A\\n  Dularn�A who summons three flying\\n  succubi to end his life. Adol\\n  make"
+
+OFFSET       : 0x3D08
+LENGTH       : 804 (0x324)
+HEADER[0:16] : 24 03 00 00 02 00 00 00 2a 20 41 74 20 6c 6f 6e
+DATA SAMPLE  : '* At long last�A Adol meets with\\n  Berhardt in his mountain shack�A\\n  and is assured that the legend\\n  of Genos and Galbalan is no myth.\\n  Berhardt recounts the entire\\n  legen'
+
+OFFSET       : 0x402C
+LENGTH       : 184 (0xB8)
+HEADER[0:16] : b8 00 00 00 03 00 00 00 2a 20 41 64 6f 6c 20 66
+DATA SAMPLE  : "* Adol finds Dogi within the caves�A\\n  standing at the foot of a deep\\n  crevasse�A unsure how to get\\n  across. It's much too wide for a\\n  normal jump to suffice...\\n\\n\x00\x1b\x01\x02\x00"
+
+OFFSET       : 0x40E4
+LENGTH       : 432 (0x1B0)
+HEADER[0:16] : b0 01 00 00 04 00 00 00 2a 20 55 73 69 6e 67 20
+DATA SAMPLE  : "* Using the power of the Ventus\\n  Bracelet�A Adol is able to cross\\n  the large gap-- though Dogi is\\n  left behind. Adol is thus asked\\n  to continue the search in Dogi's\\n  plac"
+
+OFFSET       : 0x4294
+LENGTH       : 540 (0x21C)
+HEADER[0:16] : 1c 02 00 00 05 00 00 00 2a 20 49 6e 20 74 68 65
+DATA SAMPLE  : "* In the deepest part of the Elderm\\n  Mountains' iciest cavern�A Adol\\n  finds himself face-to-face with\\n  only an enormous block of ice.\\n  Seemingly a dead-end�A he idly\\n  wal"
+
+OFFSET       : 0x44B0
+LENGTH       : 460 (0x1CC)
+HEADER[0:16] : cc 01 00 00 06 00 00 00 2a 20 53 68 6f 72 74 6c
+DATA SAMPLE  : '* Shortly after obtaining this last\\n�@statue�A the earth trembles�A and\\n�@a cave-in traps Adol inside the\\n�@icy cavern. Fortunately�A the same\\n�@cave-in created a temporary pat'
+
+OFFSET       : 0x467C
+LENGTH       : 1296 (0x510)
+HEADER[0:16] : 10 05 00 00 07 00 00 00 2a 20 55 70 6f 6e 20 74
+DATA SAMPLE  : '* Upon their safe exit back onto\\n�@the mountain slopes�A Adol and\\n�@Dogi encounter Chester�A who had\\n�@been lying in wait for them. Dogi\\n�@takes this opportunity to ask\\n�@a qu'
+
+OFFSET       : 0x4B8C
+LENGTH       : 368 (0x170)
+HEADER[0:16] : 70 01 00 00 08 00 00 00 2a 20 57 68 69 6c 65 20
+DATA SAMPLE  : '* While Berhardt struggles to keep\\n�@Dogi alive�A Adol returns to town�A\\n�@only to find Gardner collapsed\\n�@in front of the town gate. It\\n�@seems a group of soldiers from\\n�@Va'
+
+OFFSET       : 0x4D28
+LENGTH       : 300 (0x12C)
+HEADER[0:16] : 2c 01 00 00 01 00 00 00 2a 20 54 68 65 20 66 69
+DATA SAMPLE  : '* The first thing Adol sees as he\\n  rushes into town is a throng of\\n  wobbly soldiers surrounding Elena\\n  and Anya�A slowly advancing upon\\n  them for the kill. Wasting no\\n  ti'
+
+OFFSET       : 0x4E54
+LENGTH       : 560 (0x230)
+HEADER[0:16] : 30 02 00 00 02 00 00 00 2a 20 41 64 6f 6c 20 6a
+DATA SAMPLE  : "* Adol joins the emergency meeting\\n  in Mayor Edgar's house and\\n  describes the events that\\n  transpired in the mountains�A\\n  including all the details of\\n  Chester's past. Su"
+
+OFFSET       : 0x5084
+LENGTH       : 508 (0x1FC)
+HEADER[0:16] : fc 01 00 00 03 00 00 00 2a 20 41 64 6f 6c 20 66
+DATA SAMPLE  : "* Adol finds Bishop Nikolas locked\\n  in a tower high atop the castle's\\n  west wing. It seems Chester is\\n  attempting to use the castle's\\n  clock tower to release the power\\n  s"
+
+OFFSET       : 0x5278
+LENGTH       : 110 (0x6E)
+HEADER[0:16] : 6e 00 00 00 1b 01 02 00 28 01 00 00 04 00 00 00
+DATA SAMPLE  : "(\x01\x00\x00\x04\x00\x00\x00* Adol finds Count McGuire's family\\n  locked in a tower high atop the\\n  castle's east wing. "
+
+OFFSET       : 0x5280
+LENGTH       : 296 (0x128)
+HEADER[0:16] : 28 01 00 00 04 00 00 00 2a 20 41 64 6f 6c 20 66
+DATA SAMPLE  : "* Adol finds Count McGuire's family\\n  locked in a tower high atop the\\n  castle's east wing. Apparently�A\\n  Chester confined them there for\\n  their own safety�A and told them\\n "
+
+OFFSET       : 0x53A8
+LENGTH       : 456 (0x1C8)
+HEADER[0:16] : c8 01 00 00 05 00 00 00 2a 20 41 66 74 65 72 20
+DATA SAMPLE  : '* After a lengthy trek through the\\n  waterway beneath the castle�A Adol\\n  finally finds Elena locked away\\n  in a dark�A dank dungeon. It seems\\n  she was successful in locating\\'
+
+OFFSET       : 0x5568
+LENGTH       : 110 (0x6E)
+HEADER[0:16] : 6e 00 00 00 1b 01 02 00 30 03 00 00 06 00 00 00
+DATA SAMPLE  : '0\x03\x00\x00\x06\x00\x00\x00* Adol climbs the clock tower and\\n  arrives at the castle keep in the\\n  nick of time. Cheste'
+
+OFFSET       : 0x5570
+LENGTH       : 816 (0x330)
+HEADER[0:16] : 30 03 00 00 06 00 00 00 2a 20 41 64 6f 6c 20 63
+DATA SAMPLE  : '* Adol climbs the clock tower and\\n  arrives at the castle keep in the\\n  nick of time. Chester is there�A\\n  cruelly taunting McGuire before\\n  striking the final blow. He\\n  sens'
+
+OFFSET       : 0x58A0
+LENGTH       : 736 (0x2E0)
+HEADER[0:16] : e0 02 00 00 07 00 00 00 2a 20 4f 6e 20 74 68 65
+DATA SAMPLE  : '* On the rooftop�A Chester finally\\n  corners McGuire�A disallowing any\\n�@further distractions to the\\n�@fulfillment of his vengeance.\\n�@Ignoring Adol�A he steadies his\\n�@sword '
+
+OFFSET       : 0x5B80
+LENGTH       : 1408 (0x580)
+HEADER[0:16] : 80 05 00 00 08 00 00 00 2a 20 53 75 64 64 65 6e
+DATA SAMPLE  : "* Suddenly�A amidst this peaceful\\n�@resolution to what's been a long�A\\n�@arduous ordeal�A the earth begins\\n�@to shake. Chester accuses McGuire\\n�@of foul play�A but the real\\n�@"
+
+OFFSET       : 0x610C
+LENGTH       : 28 (0x1C)
+HEADER[0:16] : 1c 00 00 00 4f 6c 64 20 57 6f 75 6e 64 73 20 52
+DATA SAMPLE  : 'Wounds Reopened\x00\x1b\x01\x02\x00'
+
+OFFSET       : 0x6128
+LENGTH       : 544 (0x220)
+HEADER[0:16] : 20 02 00 00 00 00 00 00 2a 20 41 64 6f 6c 20 62
+DATA SAMPLE  : '* Adol brings Chester back to town\\n  and informs Mayor Edgar and\\n  Father Pierre of the situation as\\n  it currently stands. Dumbfounded�A\\n  the two of them begin to wallow\\n  i'
+
+OFFSET       : 0x6348
+LENGTH       : 256 (0x100)
+HEADER[0:16] : 00 01 00 00 01 00 00 00 2a 20 42 65 66 6f 72 65
+DATA SAMPLE  : '* Before leaving for the final\\n  confrontation�A Adol stops in to\\n  see Chester�A who is now extremely\\n  remorseful for his actions.\\n  Chester gives Adol the Brave\\n  Sword onc'
+
+OFFSET       : 0x6448
+LENGTH       : 480 (0x1E0)
+HEADER[0:16] : e0 01 00 00 02 00 00 00 2a 20 41 64 6f 6c 20 6d
+DATA SAMPLE  : '* Adol makes the short journey to\\n  the dock at the other end of\\n  Felghana�A whereupon he encounters\\n  Dogi. Still recovering from his\\n  wounds�A Dogi should be resting--\\n  b'
+
+OFFSET       : 0x6628
+LENGTH       : 464 (0x1D0)
+HEADER[0:16] : d0 01 00 00 03 00 00 00 2a 20 48 61 76 69 6e 67
+DATA SAMPLE  : "* Having safely traversed the rough\\n  waters of Sienna Bay�A Adol and\\n  Dogi arrive on Genos Island\\n  intact. Unfortunately�A Dogi's\\n  wounds get the better of him\\n  almost as"
+
+OFFSET       : 0x67F0
+LENGTH       : 110 (0x6E)
+HEADER[0:16] : 6e 00 00 00 1b 01 02 00 e4 02 00 00 04 00 00 00
+DATA SAMPLE  : '�\x02\x00\x00\x04\x00\x00\x00* Just before entering the Dark\\n  Shrine�A Adol encounters an old\\n  foe: the sorcerer�A Dula'
+
+OFFSET       : 0x67F8
+LENGTH       : 740 (0x2E4)
+HEADER[0:16] : e4 02 00 00 04 00 00 00 2a 20 4a 75 73 74 20 62
+DATA SAMPLE  : "* Just before entering the Dark\\n  Shrine�A Adol encounters an old\\n  foe: the sorcerer�A Dularn. Except\\n  this time�A she's come without her\\n  mask�A revealing herself to be\\n  "
+
+OFFSET       : 0x6ADC
+LENGTH       : 504 (0x1F8)
+HEADER[0:16] : f8 01 00 00 05 00 00 00 2a 20 41 66 74 65 72 20
+DATA SAMPLE  : "* After navigating the labyrinth of\\n  the Dark Shrine�A Adol finally\\n  comes face-to-face with Nikolas\\n  Garland. Garland makes light of\\n  Sister Nell's death and rambles\\n  ma"
+
+OFFSET       : 0x6CD4
+LENGTH       : 704 (0x2C0)
+HEADER[0:16] : c0 02 00 00 06 00 00 00 2a 20 41 64 6f 6c 20 70
+DATA SAMPLE  : "* Adol proceeds down into the core\\n�@of the Dark Shrine�A eventually\\n�@finding the ritual platform upon\\n�@which Elena is bound. Elena's\\n�@life force seems to be feeding\\n�@into"
+
+OFFSET       : 0x6F94
+LENGTH       : 288 (0x120)
+HEADER[0:16] : 20 01 00 00 07 00 00 00 20 42 75 74 20 74 68 65
+DATA SAMPLE  : " But the battle\\n�@isn't over-- Galbalan has been\\n�@temporarily incapacitated�A but\\n�@its resurrection is still slowly\\n�@continuing. Chester seems to have\\n�@an idea�A however�A"
+
+OFFSET       : 0x70AC
+LENGTH       : 110 (0x6E)
+HEADER[0:16] : 6e 00 00 00 1b 01 02 00 f0 01 00 00 08 00 00 00
+DATA SAMPLE  : '�\x01\x00\x00\x08\x00\x00\x00* His plan? He intends to sacrifice\\n�@himself to blow up the entire\\n�@island�A taking Galbal'
+
+OFFSET       : 0x70B4
+LENGTH       : 496 (0x1F0)
+HEADER[0:16] : f0 01 00 00 08 00 00 00 2a 20 48 69 73 20 70 6c
+DATA SAMPLE  : '* His plan? He intends to sacrifice\\n�@himself to blow up the entire\\n�@island�A taking Galbalan with it.\\n�@Elena disagrees with this course\\n�@of action�A insisting that there\\n�'
+
+OFFSET       : 0x72C8
+LENGTH       : 340 (0x154)
+HEADER[0:16] : 54 01 00 00 00 00 00 00 2a 20 47 65 6e 6f 73 20
+DATA SAMPLE  : "* Genos Island is gone-- and with\\n  it�A the curse that's lingered in\\n  Felghana for generations has been\\n  lifted. Now that all the land is\\n  safe and the townsfolk are free\\n"
+
+OFFSET       : 0x741C
+LENGTH       : 496 (0x1F0)
+HEADER[0:16] : f0 01 00 00 01 00 00 00 2a 20 48 69 73 20 6f 6e
+DATA SAMPLE  : "* His only regret is that Elena\\n  won't come to the door to say\\n�@goodbye�A as she's far too lost\\n�@in grief and despair from the\\n�@passing of her dear brother.\\n�@Adol's only "
+
+FOUND: 89
